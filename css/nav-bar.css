@@ -1,0 +1,118 @@
+#nav {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(rgb(31, 1, 48), rgb(56, 1, 51));
+  align-items: center;
+  z-index: 99;
+}
+
+#nav__logo {
+  min-width: 230px;
+  color: white;
+  cursor: pointer;
+  padding: var(--space);
+  padding-left: 20px;
+  justify-content: center;
+  width: 300%;
+}
+#nav__logo i {
+  color: orange;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: var(--font-size);
+  min-width: 450px;
+  white-space: nowrap;
+  transition: 0.5s ease-in-out all;
+}
+.nav__list li {
+  padding: var(--space);
+  transition: 0.5s ease-in-out all;
+  font-weight: 600;
+}
+.nav__list li:hover {
+  color: var(--point-color);
+}
+#nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  padding-right: 24px;
+  width: 250%;
+  min-width: 200px;
+}
+#nav__right li {
+  background: none;
+  font-size: 25px;
+  padding: var(--space);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+#nav__right li:hover {
+  color: var(--point-color);
+}
+.hidden {
+  visibility: hidden;
+  border: none;
+}
+#search-input {
+  position: relative;
+  right: 0px;
+  width: 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(89, 89, 89);
+  color: white;
+  transition: 0.5s ease-in-out all;
+  border: 2px solid white;
+}
+#search-input:focus,
+#search-input:hover {
+  background-color: rgba(140, 140, 140);
+}
+#cart {
+  z-index: 100;
+  float: right;
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  font-family: "Manrope";
+  transition: 0.8s ease-out all;
+}
+#cart__top {
+  display: flex;
+  padding: var(--space);
+  background-color: white;
+  height: 100px;
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+#cart__top i {
+  cursor: pointer;
+  transition: 0.5s ease-in-out all;
+}
+#cart__top i:hover {
+  color: var(--point-color);
+}
+#cart__bottom {
+  padding: var(--space);
+  padding-top: 50px;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  height: 84%;
+  background-color: var(--sub-color);
+}
+.padding {
+  visibility: hidden;
+}

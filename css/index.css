@@ -1,0 +1,8 @@
+#main__first {
+    height: 800px;
+    border-bottom: 5px solid white;
+}
+#main__second{
+    height: 800px;
+    background-color: gray;
+}
