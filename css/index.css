@@ -1,8 +1,72 @@
 #main__first {
-    height: 800px;
-    border-bottom: 5px solid white;
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+
 }
+#main__first__div {
+    position: relative;
+    left: 8%;
+    width: 480px;
+    height: 320px;
+    background-color: rgb(136,88,237);
+    border-radius: 40px;
+    padding: 40px 70px;
+    margin-top: 100px;
+    box-shadow: 10px 10px 20px, -10px -10px 20px;
+    z-index: 2;
+}
+#main__first__p {
+    font-size: 25px;
+    color: white;
+    line-height: 200%;
+
+}
+.main__first__big{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 100%;
+    font-family: 'Archivo';
+}
+#buy-btn{
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    padding : 15px 30px;
+    color: rgb(136,88,237);
+    font-weight: 700;
+    font-size: 22px;
+    border-radius: 25px;
+    font-family: 'Archivo';
+}
+#main__first__img{
+    position: relative; 
+    right: 9%;
+    width: 540px;
+    height: 700px;
+    margin-top: 100px;
+}
+#main__first__img img {
+    width: 540px;
+    height: 700px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 20px, -10px -10px 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #main__second{
     height: 800px;
-    background-color: gray;
+    background-color: rgb(31, 30, 30);
 }
