@@ -53,6 +53,8 @@ footer {
 }
 
 .foot__underbox img {
+  width: 100%;
+  height: auto;
   cursor: pointer;
 }
 

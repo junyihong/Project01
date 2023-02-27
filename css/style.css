@@ -6,6 +6,7 @@
 @import "reset.css";
 
 /* --------------------------------------- */
+@import "products_detail.css";
 @import "footer.css";
 @import "nav-bar.css";
 @import "index.css";
@@ -29,8 +30,8 @@ h1 {
 /* 변수지정 */
 :root {
   --point-color: rgb(206, 156, 255);
-  --space: 8px 12px;
+  --space: 8px 20px;
   --sub-color: rgb(50, 50, 50);
-  --font-size: 20px;
+  --font-size: 24px;
   --larger-font-size: 22px;
 }

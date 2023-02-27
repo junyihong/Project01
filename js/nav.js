@@ -15,7 +15,7 @@ function showInput() {
     navList.style.transform = "none";
   } else {
     searchInput.style.width = "200px";
-    navList.style.transform = "translateX(-80px)";
+    navList.style.transform = "translateX(-30px)";
   }
 }
 function showCartList() {

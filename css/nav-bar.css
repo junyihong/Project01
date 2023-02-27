@@ -4,57 +4,56 @@
   display: flex;
   width: 100%;
   height: 100px;
-  background: linear-gradient(rgb(31, 1, 48), rgb(56, 1, 51));
+  background: linear-gradient(rgba(10, 0, 10), rgb(30, 0, 20));
   align-items: center;
+  justify-content: space-between;
   z-index: 99;
 }
 
 #nav__logo {
   min-width: 230px;
   color: white;
-  cursor: pointer;
   padding: var(--space);
   padding-left: 20px;
-  justify-content: center;
-  width: 300%;
+  width: 50%;
 }
 #nav__logo i {
   color: orange;
 }
+#nav__right {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
 .nav__list {
   display: flex;
-  justify-content: space-between;
   color: white;
   font-size: var(--font-size);
-  min-width: 450px;
   white-space: nowrap;
   transition: 0.5s ease-in-out all;
 }
 .nav__list li {
   padding: var(--space);
   transition: 0.5s ease-in-out all;
-  font-weight: 600;
 }
 .nav__list li:hover {
   color: var(--point-color);
 }
-#nav__right {
+#nav__icon {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   color: white;
   padding-right: 24px;
-  width: 250%;
-  min-width: 200px;
 }
-#nav__right li {
+#nav__icon li {
   background: none;
-  font-size: 25px;
+  font-size: 28px;
   padding: var(--space);
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-#nav__right li:hover {
+#nav__icon li:hover {
   color: var(--point-color);
 }
 .hidden {
@@ -63,7 +62,7 @@
 }
 #search-input {
   position: relative;
-  right: 0px;
+  right: 8px;
   width: 0px;
   padding: 10px;
   border: none;
