@@ -1,7 +1,8 @@
 footer {
   background-color: black;
   position: relative;
-  bottom: 0px;
+  width: 100%;
+  bottom: 0;
 }
 #foot__top {
   background-color: black;

@@ -1,0 +1,99 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .bg {
+    /* background-color: black;
+    width: 100%;
+    height: 900px; */
+    padding-left: 300px;
+    padding-top: 300px;
+    /* position: fixed; */
+  }
+  .bgbg {
+    background-color: black;
+    width: 100%;
+    height: 1800px;
+  }
+  .s1 {
+    color: white;
+    font-size: 18px;
+  }
+  .naming {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  div img {
+    float: left;
+  }
+  .scale:hover {
+    transform: scale(1.2);
+    /*이걸 클릭으로 햇을때가 문제*/
+  }
+  .box1 {
+    padding-left: 100px;
+    color: white;
+    float: left;
+  }
+
+  .price {
+    font-size: 30px;
+  }
+  span del {
+    font-style: italic;
+    font-size: 20px;
+  }
+  #btn {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-family: bold;
+    background-color: #08070c;
+
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  button a {
+    text-decoration: none;
+    color: #f8f0d1;
+  }
+  .quantity {
+    font-size: 30px;
+    line-height: 70px;
+  }
+  input[type="number"] {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .detail__big {
+    clear: both;
+    color: white;
+    padding-top: 50px;
+    float: left;
+    width: 625px;
+    font-size: 30px;
+  }
+  .detail__big > div {
+    font-size: 20px;
+  }
+  .detail__small {
+    font-size: 30px;
+    color: white;
+    float: right;
+    padding-top: 50px;
+    padding-left: 100px;
+    float: left;
+  }
+  .detail__small > div {
+    font-size: 20px;
+  }
+
+  .bot {
+    color: white;
+    text-align: right;
+  }

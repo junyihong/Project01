@@ -6,11 +6,20 @@
 @import "reset.css";
 
 /* --------------------------------------- */
-@import "products_detail.css";
 @import "footer.css";
 @import "nav-bar.css";
 @import "index.css";
+@import "main2.css";
+@import "about-us.css";
+@import "products.css";
+@import "products_detail.css";
 
+
+
+
+main{
+  margin-top: 100px;
+}
 #index__body {
   font-family: "Source Sans Pro", "Manrope", sans-serif;
   height: 500vh;

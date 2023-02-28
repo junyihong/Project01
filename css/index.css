@@ -28,7 +28,7 @@
     line-height: 100%;
     font-family: 'Archivo';
 }
-#buy-btn{
+.go-to-products-btn{
     margin-top: 20px;
     background-color: white;
     border: none;
@@ -42,7 +42,7 @@
     border: 2px solid white;
     cursor: pointer;
 }
-#buy-btn:hover {
+.go-to-products-btn:hover {
     background-color: rgb(136,88,237);
     color: white;
 }
