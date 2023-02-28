@@ -17,26 +17,26 @@
         <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1>
       </div>
       <div id="nav__right">
-      <ul class="nav__list">
-        <li>
-          <a href="#">About Us</a>
-        </li>
-        <li>
-          <a href="products.html">Products</a>
-        </li>
-        <li>
-          <a href="#">Contact Us</a>
-        </li>
-      </ul>
-      <ul id="nav__icon">
-        <input id="search-input" class="hidden" type="text" />
-        <li id="toggle-vibility">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        <li><a href="login.html"><i class="fa-solid fa-user-tie"></i></a></li>
-        </li>
-        <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
-      </ul>
-    </div>
+        <ul class="nav__list">
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <ul id="nav__icon">
+          <input id="search-input" class="hidden" type="text" />
+          <li id="toggle-vibility">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          <li><a href="login.html"><i class="fa-solid fa-user-tie"></i></a></li>
+          </li>
+          <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </div>
     </div>
     <div id="cart">
       <div id="cart__top">
@@ -55,14 +55,98 @@
         <p id="main__first__p">
           Power up your Game <br>
           <span class="main__first__big"> CYBER KID <br>
-          INFINITE</span> <br>
+            INFINITE</span> <br>
           Now Available on PC & Console
         </p>
-        <a href="products.html"><button id="buy-btn" type="submit" >Buy Now</button></a>
+        <a href="products.html"><button class="go-to-products-btn" type="submit">Buy Now</button></a>
       </div>
       <div id="main__first__img"><img src="./img/Cyber-copy.webp" alt=""></div>
     </div>
-    <div id="main__second">메인페이지 내용 2</div>
+    <div id="main__second">
+      <div id="main__second__div1">
+        <span>BEST SELLERS</span>
+        <a href="products.html"><button class="go-to-products-btn" type="submit">View All</button></a>
+      </div>
+      <div id="main__second__div2">
+        <div class="prev">
+          < </div> <div id="slide__wrapper">
+            <ul class="slides">
+              <li>
+                <div class="best-img-box"><img src="./img/best1.webp" alt=""></div>
+                <p>Wave Gen RX <br>
+                  <span class="best-price">$579.99</span>
+                </p>
+                <button class="best-btn">Add to Cart</button>
+              </li>
+              <li>
+                <div class="best-img-box"><img src="./img/best2.webp" alt=""></div>
+                <p>X-2 Wireless Mouse <br>
+                  <span class="best-price">$24.99</span>
+                </p>
+                <button class="best-btn">Add to Cart</button>
+              </li>
+              <li>
+                <div class="best-img-box"><img src="./img/ancient_souls.webp" alt=""></div>
+                <p>Ancient Souls <br>
+                  <span class="best-price">$39.99</span>
+                </p>
+                <button class="best-btn">Add to Cart</button>
+              </li>
+              <li>
+                <div class="best-img-box"><img src="./img/Chronosplit.webp" alt=""></div>
+                <p>Chronosplit <br>
+                  <span class="best-price">$39.99</span>
+                </p>
+                <button class="best-btn">Add to Cart</button>
+              </li>
+              <li>
+                <div class="best-img-box"><img src="./img/Playbox_XZ_Gold_Edition.webp" alt=""></div>
+                <p>Playbox XZ Gold Edition<br>
+                  <span class="best-price">$1,000.00</span>
+                </p>
+                <button class="best-btn">Add to Cart</button>
+              </li>
+              <li>
+                <div class="best-img-box"><img src="./img/Raptor.webp" alt=""></div>
+                <p>Raptor <br>
+                  <span class="best-price"><del>$29.99</del> $26.99</span>
+                </p>
+                <button class="best-btn">Add to Cart</button>
+              </li>
+              <li>
+                <div class="best-img-box"><img src="./img/Echo_Headset.webp" alt=""></div>
+                <p>Echo_Headset<br>
+                  <span class="best-price">$39.99</span>
+                </p>
+              </li>
+              <li>
+                <div class="best-img-box"><img src="./img/Wave.webp" alt=""></div>
+                <p>Wave<br>
+                  <span class="best-price">$29.99</span>
+                </p>
+                <button class="best-btn">Add to Cart</button>
+              </li>
+              <li>
+                <div class="best-img-box"><img src="./img/Spartan_Mechanical_Keyboard.webp" alt=""></div>
+                <p>Spartan Mechanical Keyboard<br>
+                  <span class="best-price"><del>$44.99</del> $40.49</span>
+                </p>
+                <button class="best-btn">Add to Cart</button>
+              </li>
+              <li>
+                <div class="best-img-box"><img src="./img/Mach_Gaming_Chair.webp" alt=""></div>
+                <p>Mach Gaming Chair<br>
+                  <span class="best-price"><del>$129.99</del> $116.99</span>
+                </p>
+                <button class="best-btn">Add to Cart</button>
+              </li>
+            </ul>
+        </div>
+        <div class="next">
+          >
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <div id="foot__top">
@@ -116,10 +200,10 @@
 
 
 
-
+  <script src="js/main2.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/jquery-3.6.3.min.js"></script>
   <script src="https://kit.fontawesome.com/0f1871673a.js" crossorigin="anonymous"></script>
-</body>
+  </body>
 
 </html>
