@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 설명</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    h4 {
+      margin-top: 20px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+
+    }
+
+    /* body {
+      min-height: 100vh;
+      background: white;
+    } */
+
+    /* linear-gradient(to top, #ebd7fc 50%, #8239ff 90%) no-repeat */
+
+    /* background: -webkit-gradient(linear, left bottom, right top, from(#92b5db), to(#1d466c));
+      background: -webkit-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%)s;
+      background: -moz-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%);
+      background: -o-linear-gradient(bottom left, #92b5db 0%, #1d466c 100%);
+      background: linear-gradient(to top right, #92b5db 0%, #1d466c 100%); */
+    /* background
+     */
+    #joinForm {
+      border-radius: 15px;
+      width: 680px;
+      margin: 0 auto;
+      margin-top: 60px;
+      padding: 32px;
+      border: 1px solid #7c7c7c;
+      background: #ffffff;
+      opacity: 0.9;
+      box-shadow: 20px 20px 20px rgb(0, 0, 0);
+      /* 로그인 폼 투명도 */
+    }
+
+    /* body{
+		background-image: url("https://media.istockphoto.com/id/1359576900/ko/%EB%B9%84%EB%94%94%EC%98%A4/%EB%B0%B1%EB%9D%BC%EC%9D%B4%ED%8A%B8-%ED%96%87%EB%B9%9B-%EC%8A%AC%EB%A1%9C%EC%9A%B0-%EB%AA%A8%EC%85%98-%EB%B0%8F-%ED%99%95%EB%8C%80-%EC%B6%95%EC%86%8C%EC%97%90-%EB%96%A0%EC%9E%88%EB%8A%94-%EB%B2%8C%EC%83%88.mp4?s=mp4-640x640-is&k=20&c=AdGsQbk9Pd7hk2H2hi_bOkNHYsxqjh6FKYWj4dSuLV0=");
+		background-vedio: ;
+    
+    background-repeat: no-repeat	;
+    background-size: cover; width: 1920px;
+    height: 1020px;
+	} */
+
+
+    /* 동영상 css */
+    body {
+      padding: 0px;
+      margin: 0px;
+
+    }
+    /* #bg {
+      width: 100%;
+      overflow: hidden;
+      margin: 0px auto;
+      position: relative;
+    } */
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
+
+    .text {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    video-next-level {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+    /* .text p {
+      text-align: center;
+      font-size: 48px;
+      color: #ffffff;
+    } */
+
+    @media(width:2980px) {
+      #bg {
+        position: fixed;
+      }
+
+      video {
+        height: 100%;
+        width: 100%;
+      }
+
+    }
+
+      /* .text p {
+        font-size: 24px;
+      }
+    } */
+
+
+
+
+/* 
+    .input-form {
+      max-width: 680px;
+      margin-top: 80px;
+      padding: 32px;
+      border: 1px solid #ddd;
+      border-radius: 15px;
+
+
+      background: #d61b1b;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 1px;
+      -webkit-box-shadow: 0 8px 20px 0 rgba(247, 236, 236, 0.15);
+      -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 5px 8px 20px 5px rgba(8, 8, 8, 0.15); 
+     로그인 박스 그림자 
+    } */
+
+    .btn {
+
+      background: rgba(131, 49, 212, 0.6);
+      background-position: center;
+      transition: 0.8s;
+      /* color: rgb(255, 255, 255); */
+      border: 1px solid #000000;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 15px;
+      color: rgb(255, 255, 255); 
+      transition:all 0.5s, color 0.3;  
+      height: 50px;
+      width: 300px;
+    }
+    .btn:hover{
+      box-shadow: 0 80px 0 0  rgba(0,0,0,0.25) inset, 
+                    0 -80px 0 0 rgba(0,0,0,0.25) inset;
+
+    }
+    
+
+
+    .container{
+      margin-bottom: 60px;
+    }
+    /* 다른 페이지와 높이 맞추기  */
+
+    /* 박스 안에 텍스트 넣을려면 하단 주석 풀면 댐 *}*/
+
+
+
+  </style>
+</head>
+
+<body>
+    <!-- 배경화면 동영상 태그 -->
+    <video id="bg" muted autoplay loop>
+      <source
+        src="https://www.desktophut.com/files/1677064512-1677064512-power-chainsaw-man-eyes-lively-wallpaper.mp4"
+        type="video/mp4">
+    </video>
+    <div class="text">
+      <div> 
+        <!-- 동영상 태그 끝 -->
+
+
+
+      <div class="container">
+        <h4>회원가입</h4>
+
+        <div class="form">
+          <!-- <h4 class="mb-3">회원가입</h4> -->
+
+          <form action="" id="joinForm">
+            <div class="row">
+
+              <div class="col-md-6 mb-3">
+                <label for="name">이름</label>
+                <input type="text" class="form-control" id="name" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  이름을 입력해주세요.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="nickname">닉네임</label>
+                <input type="text" class="form-control" id="nickname" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  별명을 입력해주세요.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">
+                이메일을 입력해주세요.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">우편번호</label>
+              <input type="text" class="form-control" id="zipCode" onclick="postCode" required>
+
+            </div>
+
+            <div class="mb-3">
+              <label for="address">주소</label>
+              <input type="text" class="form-control" id="address" value="" required>
+              <div class="invalid-feedback">
+                주소를 입력해주세요.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="상세주소를 입력해주세요." value="" />
+            </div>
+
+            <div class="row">
+              <div class="col-md-8 mb-3">
+                <label for="root">가입 경로</label>
+                <select class="custom-select d-block w-100" id="root">
+                  <option value=""></option>
+                  <option>검색</option>
+                  <option>카페</option>
+                  <option>추천</option>
+                </select>
+                <div class="invalid-feedback">
+                  가입 경로를 선택해주세요.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="code">추천인 코드</label>
+                <input type="text" class="form-control" id="code" placeholder="" required>
+                <div class="invalid-feedback">
+                  추천인 코드를 입력해주세요.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="aggrement" required>
+              <label class="custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
+            </div>
+            <div class="mb-4"></div>
+            <button class=" btn btn-outline-light" type="submit">가입 완료</button>
+            <button class=" btn btn-outline-light" type="submit">가입 완료</button>
+
+            <!-- <button class="btn btn-primary btn-lg btn-block" type="submit">가입 완료</button> -->
+
+          </form>
+        </div>
+      </div>
+
+</body>
+</div>
+</div>
+
+
+
+</script>
+
+</html>
