@@ -2,32 +2,50 @@
     background-color: black;
     width: 100%;
     justify-content: center;
+    height: 100vh;
 }
-
-#main__second__div1 {
-    padding: 180px 130px 90px 130px;
+.main__title__box {
+    padding: 70px 7%;
     display: flex;
     justify-content: space-between;
 }
-
-#main__second__div1 span {
+.main__title {
     color: white;
     font-size: 50px;
     font-weight: 700;
     line-height: 100%;
     font-family: 'Archivo';
 }
-
-#main__second__div2 {
+#main2__title {
+    padding-top: 150px;
+}
+.go-to-products-btn2{
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    padding : 5px 30px;
+    color: rgb(136,88,237);
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 25px;
+    font-family: 'Archivo';
+    transition: 0.3s linear;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.go-to-products-btn2:hover {
+    background-color: rgb(136,88,237);
+    color: white;
+}
+#main__second__contents {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-
 #slide__wrapper {
     position: relative;
-    width: 1490px;
+    width: 1650px;
     margin: 0 auto;
     height: 521px;
     overflow: hidden;
@@ -57,7 +75,7 @@
     margin-top: 10px;
 }
 .best-img-box {
-    width: 350px;
+    width: 390px;
     height: 390px;
     overflow: hidden;
     border-radius: 20px;
@@ -98,6 +116,7 @@
     text-align: center;
     font-size: 50px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .prev {
@@ -106,4 +125,8 @@
 
 .next {
     padding-right: 50px;
+}
+.prev:hover,
+.next:hover {
+    color: #8858ED;
 }

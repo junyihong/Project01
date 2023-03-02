@@ -28,15 +28,17 @@
 .nav__list {
   display: flex;
   color: white;
+  text-align: center;
   font-size: var(--font-size);
   white-space: nowrap;
-  transition: 0.5s ease-in-out all;
 }
 .nav__list li {
   padding: var(--space);
-  transition: 0.5s ease-in-out all;
 }
-.nav__list li:hover {
+.nav__list li a{
+  transition: 0.3s ease-in-out all;
+}
+.nav__list li a:hover {
   color: var(--point-color);
 }
 #nav__icon {
@@ -46,14 +48,16 @@
   color: white;
   padding-right: 24px;
 }
-#nav__icon li {
+#nav__icon li,
+#nav__icon a {
   background: none;
   font-size: 28px;
   padding: var(--space);
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-#nav__icon li:hover {
+#nav__icon li:hover,
+#nav__icon a:hover {
   color: var(--point-color);
 }
 .hidden {
@@ -91,6 +95,7 @@
   display: flex;
   padding: var(--space);
   background-color: white;
+  color: black;
   height: 100px;
   font-size: 25px;
   align-items: center;

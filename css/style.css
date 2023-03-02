@@ -8,8 +8,12 @@
 /* --------------------------------------- */
 @import "footer.css";
 @import "nav-bar.css";
+
 @import "index.css";
+@import "main1.css";
 @import "main2.css";
+@import "main3.css";
+
 @import "about-us.css";
 @import "products.css";
 @import "products_detail.css";
@@ -20,17 +24,7 @@
 main{
   margin-top: 100px;
 }
-#index__body {
-  font-family: "Source Sans Pro", "Manrope", sans-serif;
-  height: 500vh;
-  position: relative;
-  background-image: url(../img/main-background.jpg);
-  background-repeat: no-repeat; 
-  background-attachment: fixed;
-}
-#index__main {
-  margin-top: 100px;
-}
+
 h1 {
   font-family: "Kaushan Script", cursive;
   font-size: 50px;
@@ -38,7 +32,7 @@ h1 {
 
 /* 변수지정 */
 :root {
-  --point-color: rgb(206, 156, 255);
+  --point-color: rgb(186, 88, 237);
   --space: 8px 20px;
   --sub-color: rgb(50, 50, 50);
   --font-size: 24px;
