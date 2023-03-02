@@ -17,11 +17,6 @@
     font-size: 20px;
 
 }
-.products_main{
-    /*전체 메인 위치 조정 (사이드 제외하고 전체 이동)*/
-    padding-left: 40px;
-
-}
 
 .products_a:link,
 :visited {
@@ -32,10 +27,17 @@
 
 }
 
+.products_main{
+    /*전체 메인 위치 조정 (사이드 제외하고 전체 이동)*/
+    padding-left: 40px;
+
+}
+
 .products_name {
     /*소제목 위치 조정*/
     font-size: 30px;
     padding-left: 130px;
+    padding-bottom: 20px;
 }
 
 .products_photo {
