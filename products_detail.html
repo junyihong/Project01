@@ -7,15 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WAGs</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
-
-<!-- <script>
-    $(document).ready(function () {
-      $(".detail").click(function () {
-        $("").slideDown("slow");
-      });
-    });
-  </script> -->
+  <script>
+    $(document).ready(function(){
+      $(".view__down__first").hide();
+      $("button.view__btn__first").click( function(){
+        $("div.view__down__first").slideToggle("slow");
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(".view__down__second").hide();
+      $("button.view__btn__second").click( function(){
+        $("div.view__down__second").slideToggle("slow");
+      })
+    })
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(".text__icon").hide();
+      $("button.bot").click( function(){
+        $(".text__icon").slideToggle("slow");
+      })
+    })
+  </script>
 
 <body>
   <header>
@@ -57,13 +74,14 @@
     </div>
   </header>
   <main>
-    <div class="bgbg">
-      <div class="bg">
-        <div class="s1">home > product > detail</div>
-        <div>
-          <img class="scale"
+    <div class="pd__backgroundblack">
+      <div class="pd__background">
+        <div class="s1"><a href="#"> home </a>><a href="#"> product </a>> detail</div>
+        <div class="pd__img">
+          <img 
             src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_625,h_469,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
             alt="" />
+            
         </div>
         <div class="box1">
           <div class="naming">상품명 WAGs gaming product name</div>
@@ -83,24 +101,31 @@
           <input type="number" min="0" max="100" placeholder="수량을 입력하세요" />
           <br />
           <br />
-          <button id="btn" type="button">
+          <button id="buy__btn" type="button">
             <a href="#"> 구매하기 </a>
           </button>
+          
         </div>
         <div class="detail__big">
           This area is product detail introduce text
-          <div>디테일 멘트 입력</div>
+          <div><button class="view__btn__first">view more +</button></div>
+          <div class="view__down__first"> 이곳은 설명칸으로 사용될 예정dsddddfdfb <br>
+          dsfdsfdsfsdfdsfd</div>
+          
         </div>
         <div class="detail__small">
           detail product introduce title
-          <div>
-            real detail introduce product, somebody help this text border full
-            it,plz...
+          <div><button class="view__btn__second">view more +</button>
+            <div class="view__down__second"> real detail introduce product, somebody help this
+               text <br>dsfjsdfdsdfdfsdfds <br>dsfsdfsdfsdfdsvxcvxcvrehwssdsd</div>
+               
           </div>
         </div>
-        <div class="bot"></div>
+        
       </div>
+      <button class="bot"></button><div class="text__icon"><input type="text"></div>
     </div>
+    
   </main>
   <footer>
     <div id="foot__top">
@@ -158,3 +183,18 @@
 
 </html>
 버튼 마우스 올렸을때 그라데이션 효과 알림톡
+<!-- <script>
+  $( document ).ready( function() {
+    $(this).hide()
+    $( 'button.view__btn' ).click( function() {
+      $( '.view__slidedown' ).slideDown();
+    } );
+  } );
+</script>
+<style>
+  .b { display: none; height: 100px; background-color: #bbdefb; }
+</style>
+<p><button class="a">Click</button></p>
+<div class="b"></div> -->
+class a에 해당하는 버튼을 클릭하면
+class b에 해당하는 효과가 내려온다
