@@ -1,185 +1,103 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WAGs</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <style>
+        @import url(products.css);
+    </style>
+
 </head>
 
-<body>
-    <header>
-        <div id="nav">
-          <div id="nav__logo">
-            <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1>
-          </div>
-          <div id="nav__right">
-            <ul class="nav__list">
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="products.html">Products</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-            </ul>
-            <ul id="nav__icon">
-              <input id="search-input" class="hidden" type="text" />
-              <li id="toggle-vibility">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              <li><a href="login.html"><i class="fa-solid fa-user-tie"></i></a></li>
-              </li>
-              <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
-            </ul>
-          </div>
-        </div>
-        <div id="cart">
-          <div id="cart__top">
-            <i class="fa-solid fa-angles-right"></i>
-            <span>Cart</span>
-            <span class="padding">I</span>
-          </div>
-          <div id="cart__bottom">
-            <span>Cart is empty</span>
-          </div>
-        </div>
-    </header>
-    <main >
-    <h1>Shop</h1>
-    <div class="products_left">
-        <div><a href="#first">세일상품</a></div>
-        <div><a href="#second">게임</a></div>
-        <div><a href="#third">기타장비</a></div>
-    </div>
-    <p>
-    <div class="products_name" id="first">세일상품</div>
-    </p>
-    <div class="products_photo">
-        <div>
-            <div class="products_list">
-                <a href="상품페이지"><img class="products_img" src="img/playstation1.webp"></a>
-            </div>
-            <div class="products_sale"><del>\670000</del> -> \550000
-            </div>
-        </div>
-        <div>
-            <div class="products_list">
-                <a href="상품페이지"><img class="products_img" src="img/mouse1.webp"></a>
-            </div>
-            <div class="products_sale">
-                <del>\670000</del> -> \550000
-            </div>
-        </div>
-        <div>
-            <div class="products_list">
-                <a href="상품페이지"><img class="products_img" src="img/keyboard.webp"></a>
-            </div>
-            <div class="products_sale">
-                <del>\670000</del> -> \550000
-            </div>
-        </div>
-    </div>
-    <p>
-    <div class="products_name" id="second">게임</div>
-    </p>
-    <div class="products_photo">
-        <div>
-            <div class="products_list">
-                <a href="상품페이지"><img class="products_img" src="img/game1.webp"></a>
-            </div>
-            <div class="products_game">\50000</div>
-        </div>
-        <div>
-            <div class="products_list">
-                <a href="상품페이지"><img class="products_img" src="img/game2.webp"></a>
-            </div>
-            <div class="products_game">\55000</div>
-        </div>
-    </div>
+<head>
 
-    <p>
-    <div class="products_name" id="third">기타장비</div>
-    </p>
-    <div class="products_photo">
-        <div>
-            <div class="products_list">
-                <a href="상품페이지"><img class="products_img" src="img/playstation2.webp"></a>
-            </div>
-            <div class="products_equip">\610000</div>
-        </div>
-        <div>
-            <div class="products_list">
-                <a href="상품페이지"><img class="products_img" src="img/controler1.webp"></a>
-            </div>
+</head>
 
-            <div class="products_equip">\74000</div>
+<body class="products_body">
+    <main>
+        <h1>Shop</h1> <!--제목-->
+        <div class="products_sidebar"> <!--사이드 바 -->
+            <div><a class="products_a" href="#first">세일상품</a></div>
+            <div><a class="products_a" href="#second">게임</a></div>
+            <div><a class="products_a" href="#third">기타장비</a></div>
         </div>
-        <div>
-            <div class="products_list">
-                <a href="상품페이지"><img class="products_img" src="img/keyboard.webp"></a>
+        <div class="products_main">
+            <p>
+            <div class="products_name" id="first">세일상품</div> <!--소제목 1-->
+            </p>
+            <div class="products_photo">
+                <div>
+                    <div class="products_list"> <!--세일상품 1번-->
+                        <a href="상품페이지"><img class="products_img" src="img/playstation1.webp"></a>
+                    </div>
+                    <div> <a class="products_sale" href="상품페이지">
+                            <del>\670,000</del> -> \550,000</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="products_list"> <!--세일상품 2번-->
+                        <a href="상품페이지"><img class="products_img" src="img/mouse1.webp"></a>
+                    </div>
+                    <div><a class="products_sale" href="상품페이지">
+                            <del>\43,000</del> -> \33,000</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="products_list"> <!--세일상품 3번-->
+                        <a href="상품페이지"><img class="products_img" src="img/keyboard.webp"></a>
+                    </div>
+                    <div><a class="products_sale" href="상품페이지">
+                            <del>\57,000</del> -> \48,000</a>
+                    </div>
+                </div>
             </div>
-            <div class="products_equip">\32000</div>
+            <p>
+            <div class="products_name" id="second">게임</div> <!--소제목 2-->
+            </p>
+            <div class="products_photo">
+                <div>
+                    <div class="products_list"> <!--게임상품 1번-->
+                        <a href="상품페이지"><img class="products_img" src="img/game1.webp"></a>
+                    </div>
+                    <div><a class="products_game" href="상품페이지">\50,000</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="products_list"> <!--게임상품 1번-->
+                        <a href="상품페이지"><img class="products_img" src="img/game2.webp"></a>
+                    </div>
+                    <div><a class="products_game" href="상품페이지">\55,000</a>
+                    </div>
+                </div>
+            </div>
+            <p>
+            <div class="products_name" id="third">기타장비</div> <!--소제목 3-->
+            </p>
+            <div class="products_photo">
+                <div>
+                    <div class="products_list"> <!--기타상품 1번-->
+                        <a href="상품페이지"><img class="products_img" src="img/playstation2.webp"></a>
+                    </div>
+                    <div><a class="products_equip" href="상품페이지">\610,000</a></div>
+                </div>
+                <div>
+                    <div class="products_list"> <!--기타상품 2번-->
+                        <a href="상품페이지"><img class="products_img" src="img/controler1.webp"></a>
+                    </div>
+                    <div><a class="products_equip" href="상품페이지">\24,000</a></div>
+                </div>
+                <div>
+                    <div class="products_list"> <!--기타상품 3번-->
+                        <a href="상품페이지"><img class="products_img" src="img/headset.webp"></a>
+                    </div>
+                    <div><a class="products_equip" href="상품페이지">\55,000</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-
-
-</body>
+        </div>
     </main>
-    <footer>
-        <div id="foot__top">
-          <div class="foot__upperbox">
-            <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1>
-          </div>
-          <div class="foot__upperbox">
-            <ul>
-              <span class="foot__firstline">Products</span>
-              <li>Games</li>
-              <li>Consoles</li>
-              <li>Controllers</li>
-              <li>Accessories</li>
-            </ul>
-          </div>
-          <div class="foot__upperbox">
-            <ul>
-              <span class="foot__firstline">Store</span>
-              <li>
-                500 Terry Francois Street <br />
-                San Francisco, CA94158
-              </li>
-              <li>Mon-Fri: 9am - 9pm</li>
-              <li>info@mysite.com</li>
-              <li>123-456-7890</li>
-            </ul>
-          </div>
-          <div class="foot__upperbox">
-            <span class="foot__firstline">Policy</span>
-            <ul>
-              <li>Terms & Conditions</li>
-              <li>Shipping Policy</li>
-              <li>Privacy Policy</li>
-              <li>Cookie Policy</li>
-              <li>FAQ</li>
-            </ul>
-          </div>
-        </div>
-        <div class="line">&nbsp;</div>
-        <div id="foot__bottom">
-          <div class="foot__underbox">
-            <span id="pay">Payment Methods</span><br />
-            <img src="/img/pay.PNG" />
-          </div>
-          <div class="foot__underbox">
-            <span id="pay">Join the Community</span><br />
-            <img src="/img/join.png" />
-          </div>
-        </div>
-    </footer>
+
 </body>
-<script src="js/nav.js"></script>
-<script src="js/jquery-3.6.3.min.js"></script>
-<script src="https://kit.fontawesome.com/0f1871673a.js" crossorigin="anonymous"></script>
+
 </html>
