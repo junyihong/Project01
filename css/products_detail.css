@@ -1,99 +1,136 @@
 * {
-    padding: 0px;
-    margin: 0px;
-  }
+  padding: 0px;
+  margin: 0px;
+}
 
-  .bg {
-    /* background-color: black;
+.pd__background {
+  /* background-color: black;
     width: 100%;
     height: 900px; */
-    padding-left: 300px;
-    padding-top: 300px;
-    /* position: fixed; */
-  }
-  .bgbg {
-    background-color: black;
-    width: 100%;
-    height: 1800px;
-  }
-  .s1 {
-    color: white;
-    font-size: 18px;
-  }
-  .naming {
-    font-size: 32px;
-    font-weight: bold;
-  }
-  div img {
-    float: left;
-  }
-  .scale:hover {
-    transform: scale(1.2);
-    /*이걸 클릭으로 햇을때가 문제*/
-  }
-  .box1 {
-    padding-left: 100px;
-    color: white;
-    float: left;
-  }
+  padding-left: 100px;
+  padding-top: 100px;
+  /* position: fixed; */
+}
+.pd__backgroundblack {
+  background-color: black;
+  width: 100%;
+  height: 1800px;
+}
+.s1 {
+  color: white;
+  font-size: 18px;
+}
+.naming {
+  font-size: 32px;
+  font-weight: bold;
+}
+.pd__img {
+  float: left;
+}
+#buy__btn:hover {
+  background: linear-gradient(to bottom right, white, orange);
+}
+.box1 {
+  padding-left: 100px;
+  color: white;
+  float: left;
+}
 
-  .price {
-    font-size: 30px;
-  }
-  span del {
-    font-style: italic;
-    font-size: 20px;
-  }
-  #btn {
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    font-family: bold;
-    background-color: #08070c;
+.price {
+  font-size: 30px;
+}
+span del {
+  font-style: italic;
+  font-size: 20px;
+}
+#buy__btn {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  font-family: bold;
+  background-color: #08070c;
 
-    border-radius: 30px;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  button a {
-    text-decoration: none;
-    color: #f8f0d1;
-  }
-  .quantity {
-    font-size: 30px;
-    line-height: 70px;
-  }
-  input[type="number"] {
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .detail__big {
-    clear: both;
-    color: white;
-    padding-top: 50px;
-    float: left;
-    width: 625px;
-    font-size: 30px;
-  }
-  .detail__big > div {
-    font-size: 20px;
-  }
-  .detail__small {
-    font-size: 30px;
-    color: white;
-    float: right;
-    padding-top: 50px;
-    padding-left: 100px;
-    float: left;
-  }
-  .detail__small > div {
-    font-size: 20px;
-  }
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.buy__btn a {
+  text-decoration: none;
+  color: #f8f0d1;
+}
+.quantity {
+  font-size: 30px;
+  line-height: 70px;
+}
+input[type="number"] {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.detail__big {
+  clear: both;
+  color: white;
+  padding-top: 50px;
+  float: left;
+  width: 625px;
+  font-size: 30px;
+}
+.detail__big > div {
+  font-size: 20px;
+}
+.detail__small {
+  font-size: 30px;
+  color: white;
+  float: right;
+  padding-top: 50px;
+  padding-left: 100px;
+  float: left;
+}
+.detail__small > div {
+  font-size: 20px;
+}
 
-  .bot {
-    color: white;
-    text-align: right;
-  }
+.bot {
+  color: white;
+  /* float: right;
+  text-align: right; */
+  position: fixed;
+  background-color: purple;
+  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+}
+.text__icon {
+  width: 100px;
+  height: 300px;
+  background-color: white;
+  float: right;
+}
+input[type="text"] {
+  width: 100px;
+  
+}
+
+.view__btn__first {
+  background-color: rgb(0, 0, 0);
+  color: red;
+  border: none;
+}
+.view__down__first {
+  /* height: 200px;
+  width: 500px; */
+  background-color: black;
+}
+.view__btn__second {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+}
+
+.view__down__second {
+  /* height: 200px;
+  width: 500px; */
+  background-color: black;
+}
