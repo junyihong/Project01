@@ -1,55 +1,61 @@
-body {
+.products_body {
     background-color: purple;
     color: white;
     margin-left: 100px;
 }
 
-img {
+.products_img {
     /*이미지 사진 크기 조정*/
     width: 300px;
     height: 400px;
 }
 
-.left {
+.products_left {
     /*메뉴 위치 고정*/
     position: fixed;
     margin-top: 4%;
 }
 
-a {
+.products_a {
     /*링크 밑줄 삭제*/
     text-decoration: none;
 }
 
-a:link,
+.products_a:link,
 :visited {
     /*링크 글자 색 및 링크 방문한적 있을 때 색*/
     color: white;
 }
 
-.name {
+.products_name {
     /*소제목*/
     font-size: 30px;
     padding-left: 100px;
 }
 
-.photo {
+.products_photo {
     /*리스트 메뉴*/
     display: flex;
     padding-left: 90px;
     padding-bottom: 10px;
 }
 
-.list {
+.products_list {
     /*리스트 간격*/
     margin-left: 20px;
 }
-.sale{ /*세일 항목 가격*/
+
+.products_sale {
+    /*세일 항목 가격*/
     margin-left: 90px;
 }
-.game{ /*게임 항목 가격*/
+
+.products_game {
+    /*게임 항목 가격*/
     margin-left: 130px;
 }
-.equip{ /*장비 항목 가격*/
+
+.products_equip {
+    /*장비 항목 가격*/
     margin-left: 130px;
 }
