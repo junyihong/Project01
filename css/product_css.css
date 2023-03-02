@@ -16,13 +16,10 @@
     margin-top: 4%;
 }
 
-.products_a {
-    /*링크 밑줄 삭제*/
-    text-decoration: none;
-}
-
 .products_a:link,
 :visited {
+    /*링크 밑줄 삭제*/
+    text-decoration: none;
     /*링크 글자 색 및 링크 방문한적 있을 때 색*/
     color: white;
 }
