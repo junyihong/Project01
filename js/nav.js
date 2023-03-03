@@ -7,12 +7,13 @@ const navList = document.querySelector(".nav__list");
 const cartBtn = document.querySelector("#cart-btn");
 const cartInnerBtn = document.querySelector("#cart__top i");
 const cartList = document.querySelector("#cart");
+const cartLightOff = document.querySelector("#lightoff");
 
 function showInput() {
   searchInput.classList.toggle("hidden");
   if (searchInput.className === "hidden") {
     searchInput.style.width = "0px";
-    navList.style.transform = "none";
+    navList.style.transform = "translateX(0px)";
   } else {
     searchInput.style.width = "200px";
     navList.style.transform = "translateX(-30px)";
@@ -20,9 +21,11 @@ function showInput() {
 }
 function showCartList() {
   cartList.style.transform = "translateX(-300px)";
+  cartLightOff.classList.remove("hidden");
 }
 function hideCartList() {
   cartList.style.transform = "translateX(300px)";
+  cartLightOff.classList.add("hidden");
   // cartList.style.transform = "translateX(-300px)";
 }
 

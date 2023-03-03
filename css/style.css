@@ -13,6 +13,7 @@
 @import "main1.css";
 @import "main2.css";
 @import "main3.css";
+@import "main4.css";
 
 @import "about-us.css";
 @import "product_copy.css";
@@ -25,10 +26,6 @@ main{
   margin-top: 100px;
 }
 
-h1 {
-  font-family: "Kaushan Script", cursive;
-  font-size: 50px;
-}
 
 /* 변수지정 */
 :root {

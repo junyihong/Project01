@@ -32,7 +32,7 @@ function makeClone() {
         //이미지가 정렬되는 모습을 보이지 않게하기 위한 타임아웃
     setTimeout(function(){
         slides.classList.add("animated");
-    },100);
+    }, 100);
 }
 function updateWidth(){
         // 앞뒤로 추가된 클론리스트를 포함하여 다시 새로이 선택
@@ -59,4 +59,20 @@ prevBtn.addEventListener("click", function(){
 function moveSlide(num){
     slides.style.left= - num * (slideWidth + slideMargin) + 'px';
     currentIdx = num;
+    console.log(currentIdx, slideCount);
+
+    if (currentIdx == slideCount || currentIdx == -slideCount) {
+        setTimeout(function(){
+            slides.classList.remove('animated');
+            slides.style.left = '0px';
+            currentIdx = 0;
+        },500);
+        //슬라이드가 끝에 도달하면
+        // 슬라이드의 처음으로 돌아가는 애니메이션을 없애서 연결되어있다는 느낌을 주도록함
+        setTimeout(function(){
+            slides.classList.add('animated');
+        },600);
+        // 다시 애니메이션 효과 추가
+    }
+
 }

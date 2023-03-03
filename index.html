@@ -18,7 +18,9 @@
   <header>
     <div id="nav">
       <div id="nav__logo">
-        <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1>
+        <video autoplay id="logo-mp4" muted height="110px" width="400px">
+          <source src="img/main_logo.mp4" type="video/mp4">
+        </video>
       </div>
       <div id="nav__right">
         <ul class="nav__list">
@@ -29,7 +31,7 @@
             <a href="products.html">Products</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
           </li>
         </ul>
         <ul id="nav__icon">
@@ -42,6 +44,7 @@
         </ul>
       </div>
     </div>
+    <div id="lightoff" class="hidden"></div>
     <div id="cart">
       <div id="cart__top">
         <i class="fa-solid fa-angles-right"></i>
@@ -53,12 +56,13 @@
       </div>
     </div>
   </header>
+  <a href="products.html"></a>
   <main id="index__main">
     <div id="main__first">
       <div id="main__first__div">
         <p id="main__first__p">
           Power up your Game <br>
-          <span class="main__first__big"> CYBER KID <br>
+          <span class="big"> CYBER KID <br>
             INFINITE</span> <br>
           Now Available on PC & Console
         </p>
@@ -175,7 +179,23 @@
         </div>
       </div>
     </div>
+    <div id="main__fourth">
+      <div id="fourth__box1">
+        <p>
+          THIS WEEK'S DEALS <br>
+          <span class="king-big">10%</span><br>
+          <span class="fourth-big">off all games</span><br>
+          <a href="products.html"><button class="forth-btn" type="submit">Shop Now</button></a>
+        </p>
+      </div>
+      <div id="fourth__box__con">
+      <div id="fourth__box2"><img src="img/kira.webp" width="380px" height="520px"></div>
+      <div id="fourth__box3"><img src="img/chrono.jpg" width="380px" height="520px"></div>
+      <div id="fourth__box4"><img src="img/deadatlast.jpg" width="380px" height="520px"></div>
+    </div>
+    </div>
   </main>
+
   <footer>
     <div id="foot__top">
       <div class="foot__upperbox">
@@ -213,7 +233,8 @@
         </ul>
       </div>
     </div>
-    <div class="line">&nbsp;</div>
+    <div class="line">
+      &nbsp;</div>
     <div id="foot__bottom">
       <div class="foot__underbox">
         <span id="pay">Payment Methods</span><br />
@@ -227,17 +248,19 @@
   </footer>
 
 
-  <video autoplay loop id="video-splash" poster="" muted>
+  <!-- <video autoplay loop id="video-splash" poster="" muted>
     <source src="https://www.desktophut.com/files/1659615046-1659615046-tala-nicole-valorant-animated-wallpaper.mp4"
       type="video/mp4">
   </video>
-   <div id="splash-screen">
+  <div id="splash-screen">
     <img id="splash-img"
       src="https://raw.githubusercontent.com/junyihong/Project01/3481e3aa026d4a71d4daa0bdd0a97fd97f378058/Fauget%20(2).gif">
-    </div>
+  </div> -->
 
-  <script src="js/main2.js"></script>
+  
   <script src="js/nav.js"></script>
+  <script src="js/main2.js"></script>
+  <script src="js/main4.js"></script>
   <script src="js/jquery-3.6.3.min.js"></script>
   <script src="https://kit.fontawesome.com/0f1871673a.js" crossorigin="anonymous"></script>
 </body>
