@@ -1,7 +1,6 @@
 .products_body {
     background-color: black;
     color: white;
-
 }
 
 .products_img {
@@ -13,10 +12,9 @@
 .products_sidebar {
     /*사이드 메뉴 위치 고정*/
     position: fixed;
-    padding-top: 30px;
+    padding: 30px;
     margin-top: 4%;
     font-size: 20px;
-
 }
 
 .products_a:link,
@@ -24,7 +22,6 @@
     /*링크 밑줄 삭제*/
     text-decoration: none;
     /*항상 흰색 유지*/
-    color: white;
 
 }
 
@@ -33,7 +30,6 @@
     padding-left: 40px;
     padding-top: 50px;
     padding-bottom: 70px;
-
 }
 
 .products_name {
@@ -49,7 +45,6 @@
     display: flex;
     padding-left: 90px;
     padding-bottom: 40px;
-
 }
 
 .products_list {
@@ -68,7 +63,6 @@
     /*링크 밑줄 삭제*/
     text-decoration: none;
     /*항상 흰색 유지*/
-    color: white;
 }
 
 
@@ -84,7 +78,6 @@
     /*링크 밑줄 삭제*/
     text-decoration: none;
     /*항상 흰색 유지*/
-    color: white;
 }
 
 .products_consoles_name {
@@ -99,7 +92,6 @@
     /*링크 밑줄 삭제*/
     text-decoration: none;
     /*항상 흰색 유지*/
-    color: white;
 }
 
 .products_controllers_name {
@@ -119,7 +111,6 @@
     /*링크 밑줄 삭제*/
     text-decoration: none;
     /*항상 흰색 유지*/
-    color: white;
 }
 
 
@@ -150,5 +141,4 @@
     /*링크 밑줄 삭제*/
     text-decoration: none;
     /*항상 흰색 유지*/
-    color: white;
 }
