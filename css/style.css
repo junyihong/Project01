@@ -6,26 +6,22 @@
 @import "reset.css";
 
 /* --------------------------------------- */
-@import "footer.css";
-@import "nav-bar.css";
+@import "nav&foot/nav-bar.css";
+@import "nav&foot/footer.css";
 
-@import "index.css";
-@import "main1.css";
-@import "main2.css";
-@import "main3.css";
-@import "main4.css";
+@import "main-page/index.css";
+@import "main-page/part1.css";
+@import "main-page/part2.css";
+@import "main-page/part3.css";
+@import "main-page/part4.css";
 
 @import "about-us.css";
-@import "product_copy.css";
+@import "products.css";
 @import "products_detail.css";
 
-
-
-
-main{
+main {
   margin-top: 100px;
 }
-
 
 /* 변수지정 */
 :root {
