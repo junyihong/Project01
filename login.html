@@ -1,351 +1,51 @@
 <!DOCTYPE html>
-<html lang="ko">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
-
-    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
-    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif
-        }
-
-        body {
-            padding: 0px;
-            margin: 0px;
-        }
-
-        .container {
-            margin: 30px auto;
-            border-radius: 15px;
-            width: 25%;
-            border: 1px solid #7c7c7c;
-            background: #ffffff;
-            opacity: 0.8;
-            box-shadow: 20px 20px 20px rgb(3, 2, 2);
-        }
-
-        .panel-heading {
-            text-align: center;
-            margin-bottom: 10px
-        }
-
-        #forgot {
-            min-width: 100px;
-            margin-left: auto;
-            text-decoration: none
-        }
-
-        a:hover {
-            text-decoration: none
-        }
-
-        .form-inline label {
-            padding-left: 10px;
-            margin: 0;
-            cursor: pointer
-        }
-
-        .btn.btn-primary {
-            margin-top: 20px;
-            border-radius: 15px
-        }
-
-        .panel {
-            min-height: 380px;
-            box-shadow: 20px 20px 80px rgb(218, 218, 218);
-            border-radius: 12px
-        }
-
-        .input-field {
-            border-radius: 5px;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            border: 1px solid #ddd;
-            color: #4343ff
-        }
-
-        input[type='text'],
-        input[type='password'] {
-            border: none;
-            outline: none;
-            box-shadow: none;
-            width: 100%
-        }
-
-        .fa-eye-slash.btn {
-            border: none;
-            outline: none;
-            box-shadow: none
-        }
-
-        /* 로고 이미지 */
-        img {
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
-            border-radius: 50%;
-            position: relative
-        }
-
-
-
-        .bordert {
-            border-top: 1px solid #aaa;
-            position: relative
-        }
-
-        .bordert:after {
-            content: "or connect with";
-            position: absolute;
-            top: -13px;
-            left: 33%;
-            background-color: #fff;
-            padding: 0px 8px
-        }
-
-        body {
-            padding: 0px;
-            margin: 0px;
-        }
-
-        .bg {
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
-            margin: 0px auto;
-            position: relative;
-        }
-
-        video {
-            width: 100%;
-            height: 100%;
-        }
-
-        .text {
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-
-        @media(max-width:2980px) {
-            .bg {
-                height: 1080px;
-            }
-
-            video {
-                height: 100%;
-                width: 100%;
-            }
-        }
-
-        @keyframes pulsate {
-            100% {
-                /* Larger blur radius */
-                text-shadow: 0 0 4px #fff, 0 0 11px rgb(0, 0, 0), 0 0 19px #fff, 0 0 40px rgb(0, 174, 255), 0 0 80px rgb(2, 120, 255), 0 0 90px rgb(204, 0, 255), 0 0 100px rgb(183, 0, 255), 0 0 150px #0fa;
-            }
-
-            0% {
-                /* Smaller blur radius */
-                text-shadow: 0 0 2px #fff, 0 0 4px rgb(255, 253, 253), 0 0 6px #fff, 0 0 10px rgb(0, 174, 255), 0 0 45px rgb(0, 174, 255), 0 0 55px rgb(140, 0, 255), 0 0 70px rgb(183, 0, 255), 0 0 80px rgb(0, 174, 255);
-            }
-        }
-
-        h2 {
-            margin-top: 20px;
-            text-align: center;
-            color: white;
-            font-weight: bold;
-            text-shadow: 50px;
-            animation: pulsate 1.51s ease-in-out infinite alternate;
-        }
-
-
-
-        .custom-btn {
-            width: 400px;
-            height: 40px;
-            color: #fff;
-            border-radius: 5px;
-            background: transparent;
-            cursor: pointer;
-            transition: all 0.7s ease;
-            position: relative;
-            display: inline-block;
-            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-                7px 7px 20px 0px rgba(0, 0, 0, .1),
-                4px 4px 5px 0px rgba(0, 0, 0, .1);
-            outline: none;
-        }
-
-        .btn-8 {
-            background-color: #26c9fb;
-            background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
-            line-height: 42px;
-            padding: 0;
-            border: none;
-        }
-
-        .btn-8 span {
-            position: relative;
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-
-        .btn-8:before,
-        .btn-8:after {
-            position: absolute;
-            content: "";
-            right: 0;
-            bottom: 0;
-            background: #c797eb;
-            /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-            transition: all 0.3s ease;
-        }
-
-        .btn-8:before {
-            height: 0%;
-            width: 2px;
-        }
-
-        .btn-8:after {
-            width: 0%;
-            height: 2px;
-        }
-
-        .btn-8:hover:before {
-            height: 100%;
-        }
-
-        .btn-8:hover:after {
-            width: 100%;
-        }
-
-        .btn-8:hover {
-            background: transparent;
-        }
-
-        .btn-8 span:hover {
-            color: #c797eb;
-        }
-
-        .btn-8 span:before,
-        .btn-8 span:after {
-            position: absolute;
-            content: "";
-            left: 0;
-            top: 0;
-            background: #97cbeb;
-            /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
-            transition: all 0.3s ease;
-        }
-
-        .btn-8 span:before {
-            width: 2px;
-            height: 0%;
-        }
-
-        .btn-8 span:after {
-            height: 2px;
-            width: 0%;
-        }
-
-        .btn-8 span:hover:before {
-            height: 100%;
-        }
-
-        .btn-8 span:hover:after {
-            width: 100%;
-        }
-    </style>
-    <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
-</head>
-
-<body>
-    <video id="bg" muted autoplay loop>
-        <source src="https://www.desktophut.com/files/1677584710-1677584710-jinx-smoking.mp4" type="video/mp4">
-    </video>
-    <div class="text">
-        <div>
-
-            <!-- <body oncontextmenu='return false' class='snippet-body'> -->
-
-            <h2>로그인</h2>
-
-            <div class="container">
-
-                <div class="panel-heading">
-                </div>
-
-                <div class="panel-body p-3">
-                    <form>
-                        <div>
-
-                            <div class="input-field"> <span class="far fa-user px-2"></span> <input type="text"
-                                    placeholder="아이디를 입력하세요" required> </div>
-                        </div>
-                        <div class="form-group py-1 pb-2">
-                            <div class="input-field"> <span class="fa fa-lock px-2"></span> <input type="password"
-                                    placeholder="비밀번호를 입력하세요" required> <button class="btn bg-white text-muted">
-                            </div>
-                            <div class="form-inline"> <input type="checkbox" name="remember" id="remember"> <label
-                                    for="remember" class="text-muted">Remember me</label> <a href="#" id="forgot"
-                                    class="font-weight-bold">Forgot password?</a> </div><br>
-
-
-
-                            <div class="frame">
-                                <button class="custom-btn btn-8"><span>Login</span></button>
-                            </div>
-
-                            <div class="text-center pt-4 text-muted">Don't have an account? <a href="링크">다른계정으로 로그인</a>
-                            </div>
-                    </form>
-                </div>
-                <!--하단 로고 링크-->
-                <!-- https://www.freepnglogos.com/ -->
-                <div class="mx-3 my-2 py-2 bordert">
-                    <div class="text-center py-3">
-                        <a href="https://wwww.facebook.com" target="_blank" class="px-2">
-                            <img src="https://www.dpreview.com/files/p/articles/4698742202/facebook.jpeg" alt="">
-                        </a>
-                        <a href="https://www.google.com" target="_blank" class="px-2">
-                            <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
-                                alt="">
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="px-2">
-                            <img src="https://www.freepnglogos.com/uploads/download-instagram-png-logo-20.png" alt="">
-                        </a>
-                        <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fsharer.kakao.com%2Fpicker%2Flink%3Fapp_key%3D4e0f02e43248fed6c5850431ea527a61%26short_key%3D7aa5d1df-50d6-418c-ae24-997cd5da00ff#login"
-                            target="_blank" class="px-2">
-                            <img src="data:image/png;base64,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"
-                                alt="">
-                        </a>
-
-                    </div>
-
-                </div>
-</body>
+  <video id="bg" muted autoplay loop>
+    <source src="https://www.desktophut.com/files/1659698699-1659698699-ori-video-wallpaper-4k.mp4" type="video/mp4">
+  </video>
+  <div class="text">
+    <div>
+      <!-- <body oncontextmenu='return false' class='snippet-body'> -->
+      <h2>로그인</h2>
+      <div class="container">
+        <div class="panel-heading"></div>
+        <div class="login_form">
+          <form class="form-group py-1 pb-2">
+            <div class="input-field">
+              <span class="far fa-user px-2"></span>
+              <input type="text" placeholder="아이디를 입력하세요" required>
+            </div>
+            <div class="input-field"> <span class="fa fa-lock px-2"></span> <input type="password"
+                placeholder="비밀번호를 입력하세요" required> <button class="btn bg-white text-muted">
+            </div>
+            <div class="form-inline"> <input type="checkbox" name="remember" id="remember"> <label for="remember"
+                class="text-muted">다음에도 기억하기</label> <a id="forgot" class="font-weight-bold">비밀번호 찾기</a> 
+            </div><br>
+            <div class="frame">
+              <button class="custom-btn btn-8"><span>Login</span></button>
+            </div>
+            <div class="text-center pt-4 text-muted">아직 회원이 아니신가요? <a href="#">회원가입</a>
+          </form>
+        </div>
+              
+        <!--하단 로고 링크-->
+        <!-- https://www.freepnglogos.com/ -->
+        <div class="bordert" style="margin: 2vh;">
+        </div>
+        <div class="mt-4">
+          <a class="login_social_icon" href="https://wwww.facebook.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/4494/4494475.png" alt="">
+          </a>
+          <a class="login_social_icon" href="https://www.google.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="">
+          </a>
+          <a class="login_social_icon" href="https://www.instagram.com/">
+            <img src="https://cdn-icons-png.flaticon.com/512/4138/4138124.png" alt="">
+          </a>
+          <a class="login_social_icon"
+            href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fsharer.kakao.com%2Fpicker%2Flink%3Fapp_key%3D4e0f02e43248fed6c5850431ea527a61%26short_key%3D7aa5d1df-50d6-418c-ae24-997cd5da00ff#login">
+            <img src="/Users/kimsoulbee/Desktop/개인 프로젝트 수정 전.html/html/kakao.icon.png" alt="">
+        </div>
+      </div>
 
 </html>
