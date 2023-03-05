@@ -1,8 +1,5 @@
-/*부트스트랩 */
-<link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
-<link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
 /* 기본값 */
-        * {
+* {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif
 }
