@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAGs</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="nav">
+        <div id="nav__logo">
+          <a href="index.html"
+            ><video autoplay id="logo-mp4" muted height="110px" width="400px">
+              <source src="img/main_logo.mp4" type="video/mp4" /></video
+          ></a>
+        </div>
+        <div id="nav__right">
+          <ul class="nav__list">
+            <li>
+              <a href="about-us.html">About Us</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <ul id="nav__icon">
+            <input id="search-input" class="hidden" type="text" />
+            <li id="toggle-vibility">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+
+            <li>
+              <a href="login.html"><i class="fa-solid fa-user-tie"></i></a>
+            </li>
+
+            <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div id="lightoff" class="hidden"></div>
+      <div id="cart">
+        <div id="cart__top">
+          <i class="fa-solid fa-angles-right"></i>
+          <span>Cart</span>
+          <span class="padding">I</span>
+        </div>
+        <div id="cart__bottom">
+          <span>Cart is empty</span>
+        </div>
+      </div>
+    </header>
+    <main id="contact-us__main">
+      <div id="contact__container">
+        <div id="contact__title"><span>NEED A HAND?</span></div>
+        <div id="contact__left">
+          <span id="contact__subtitle">Contact Us</span>
+          <span id="contact__info">
+            Info@mysite.com <br />
+            <br />
+            123-456-7890 <br />
+            <br />
+            500 Terry Francois Street <br />
+            San Francisco, CA 94158 <br />
+            <br />
+          </span>
+
+          <div id="map"><img src="" alt="" width="450px" height="250px" /></div>
+        </div>
+        <div id="contact__right">
+          <form action="" id="contact__form">
+            <div class="contact__form__div">
+              <label for="contact__FN" class="contact__label"
+                >First Name *</label
+              >
+              <input
+                type="text"
+                id="contact__FN"
+                class="contact__input"
+                style="border-top-left-radius: 15px"
+                placeholder="이름"
+                required
+              />
+            </div>
+            <div class="contact__form__div">
+              <label for="contact__LN" class="contact__label"
+                >Last Name *</label
+              >
+              <input
+                type="text"
+                id="contact__LN"
+                class="contact__input"
+                style="border-top-right-radius: 15px"
+                placeholder="성"
+                required
+              />
+            </div>
+            <div class="contact__form__div">
+              <label for="contact__EM" class="contact__label">E-mail *</label>
+              <input
+                type="email"
+                id="contact__EM"
+                class="contact__input"
+                placeholder="이메일"
+                required
+              />
+            </div>
+            <div class="contact__form__div">
+              <label for="contact__PN" class="contact__label">Phone</label>
+              <input
+                type="text"
+                id="contact__PN"
+                class="contact__input"
+                placeholder="전화번호"
+              />
+            </div>
+
+            <label for="contact__message" class="contact__label"
+              >Leave us a Message</label
+            >
+            <div id="contact__submit__div">
+              <textarea
+                id="contact__message"
+                name=""
+                style="resize: none"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button type="submit" id="contact__submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div id="contact__bottom"></div>
+      </div>
+    </main>
+    <footer>
+      <div id="foot__top">
+        <div class="foot__upperbox">
+          <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1>
+        </div>
+        <div class="foot__upperbox">
+          <ul>
+            <span class="foot__firstline">Products</span>
+            <li>Games</li>
+            <li>Consoles</li>
+            <li>Controllers</li>
+            <li>Accessories</li>
+          </ul>
+        </div>
+        <div class="foot__upperbox">
+          <ul>
+            <span class="foot__firstline">Store</span>
+            <li>
+              500 Terry Francois Street <br />
+              San Francisco, CA94158
+            </li>
+            <li>Mon-Fri: 9am - 9pm</li>
+            <li>info@mysite.com</li>
+            <li>123-456-7890</li>
+          </ul>
+        </div>
+        <div class="foot__upperbox">
+          <span class="foot__firstline">Policy</span>
+          <ul>
+            <li>Terms & Conditions</li>
+            <li>Shipping Policy</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+      <div class="line">&nbsp;</div>
+      <div id="foot__bottom">
+        <div class="foot__underbox">
+          <span id="pay">Payment Methods</span><br />
+          <img src="img/pay.PNG" />
+        </div>
+        <div class="foot__underbox">
+          <span id="pay">Join the Community</span><br />
+          <img src="img/join.png" />
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0f1871673a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
