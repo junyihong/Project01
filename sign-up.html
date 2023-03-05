@@ -13,17 +13,18 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 </head>
-<body>
-<!-- 배경화면 동영상 태그 -->
-    <video id="bg" muted autoplay loop>
+
+<body class="sign-up-body">
+    <!-- 배경화면 동영상 태그 -->
+    <video id="sign-up-video" muted autoplay loop>
         <source src="https://www.desktophut.com/files/1659698699-1659698699-ori-video-wallpaper-4k.mp4" type="video/mp4""
         type=" video/mp4">
     </video>
-    <div class="text">
+    <div class="sign-up-text">
         <div>
             <!-- 동영상 태그 끝 -->
-            <h2>회원가입</h2>
-            <div class="container">
+            <h2 class="sign-up-h2">회원가입</h2>
+            <div class="sign-up-container">
                 <div class="form">
                     <!-- <h4 class="mb-3">회원가입</h4> -->
                     <form action="" id="joinForm">
@@ -55,7 +56,9 @@
                         <div class="mb-3">
                             <label for="address">우편번호</label>
                             <input type="text" class="form-control" id="zipCode" onclick="postCode" required>
+
                         </div>
+
                         <div class="mb-3">
                             <label for="address">주소</label>
                             <input type="text" class="form-control" id="address" value="" required>
@@ -92,14 +95,16 @@
                             </div>
                         </div>
                         <hr class="mb-4">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="aggrement" required>
-                            <label class="custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
+                        <div class="sign-up-custom-control custom-checkbox">
+                            <input type="checkbox" class="sign-up-custom-control-input" id="aggrement" required>
+                            <label class="sign-up-custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
                         </div>
                         <div class="mb-4"></div>
-                        <button class="custom-btn btn-8"><span>가입완료</span></button>
+                        <button class="sign-up-custom-btn btn-8"><span>가입완료</span></button>
                     </form>
                 </div>
             </div>
+</div>
+</div>
 </body>
 </html>
