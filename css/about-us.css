@@ -115,15 +115,17 @@
       40% {opacity: 0;}
 }
 .game_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       text-align: center;
-      padding-top: 8%;
       width: 40%;
+      height: 400px;
       font-size: 20px;
       color:#FFF;
       border-color: #ed2924 #d8b100 #00a750;
       border-style: solid;
       border-width: 5px;
-     
 }
 /* 게임이미지 슬라이드 끝 */
 
@@ -170,8 +172,10 @@
       40% {opacity: 0;}
 }
 .item_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       text-align: center;
-      padding-top: 10%;
       margin-left: 13%;
       width: 40%;
       font-size: 20px;
