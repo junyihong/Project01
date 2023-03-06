@@ -2,33 +2,43 @@
   background: black;
   height: 120px;
 }
+
 #contact-us__main {
   height: 200vh;
   background-color: black;
   color: white;
 }
+
 #contact__container {
   padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
 }
+
 #contact__title {
+  padding: 20px 7%;
+  min-width: 550px;
   font-size: 70px;
   font-weight: 700;
   font-family: "Archivo";
   padding-bottom: 50px;
 }
+
 #contact__left {
-  float: left;
-  display: flex;
+  display: block;
+  min-width: 35%;
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
   font-size: var(--font-size);
   font-weight: 500;
 }
+
 #contact__subtitle {
   display: inline-block;
   padding-bottom: 70px;
 }
+
 #contact__info {
   display: inline-block;
   font-weight: 700;
@@ -36,41 +46,49 @@
   line-height: 120%;
   padding-bottom: 20px;
 }
+
 #contact__right {
-  display: flex;
+  display: block;
   width: 50%;
+  min-width: 30%;
   justify-content: center;
   background: transparent;
-  vertical-align: baseline;
 }
+
 #contact__form {
   position: relative;
-  left: 0;
-  width: 410px;
+  left: 15%;
+  top: 30px;
+  width: 500px;
+  min-width: 450px;
   padding-left: 5%;
 }
+
 .contact__label {
   text-align: left;
   display: inline-block;
   line-height: 1;
   padding-left: 30px;
-  margin-bottom: 12px;
+  margin: 12px 0;
   word-break: break-all;
 }
+
 .contact__form__div {
   width: 50%;
   float: left;
   font-size: 15px;
+  margin-bottom: 2px;
 }
+
 .contact__input {
   width: 101%;
   box-sizing: border-box;
   padding: 18px;
-  margin-bottom: 5px;
   border: 3px solid rgb(136, 88, 237);
   background-color: transparent;
   color: white;
 }
+
 .contact__input:focus,
 .contact__input:hover,
 #contact__message:focus,
@@ -78,9 +96,11 @@
   border: 3px solid white;
   background-color: rgb(136, 88, 237);
 }
+
 .contact__input::placeholder {
   color: white;
 }
+
 #contact__message {
   width: 100%;
   background-color: black;
@@ -91,9 +111,11 @@
   border: 3px solid rgb(136, 88, 237);
   outline-color: transparent;
 }
+
 #contact__submit__div {
   width: 100%;
 }
+
 #contact__submit {
   background-color: rgb(136, 88, 237);
   border: 3px solid rgb(136, 88, 237);
@@ -108,7 +130,28 @@
   border-bottom-right-radius: 15px;
   transition: 0.5s ease-in-out;
 }
+
 #contact__submit:hover {
   font-size: 22px;
   transition: 0.5s ease-in-out;
+}
+
+/* --------FAQ 파트 ---------------- */
+
+#contact__bottom {
+  margin-top: 100px;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(20,5,20);
+}
+#FAQ__col1 {
+  display: inline-block;
+  font-weight: 700;
+  font-family: "Archivo";
+  font-size: 40px;
+}
+#FAQ__col2{
+  width: 50%;
 }

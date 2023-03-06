@@ -55,14 +55,14 @@
 }
 
 /* 입력 박스 사이즈 위치 조정 태그 2*/
-input[type='text'],
+/* input[type='text'],
 input[type='password'] {
   border: none;
   outline: none;
   box-shadow: none;
   font-size: 14px;
-  height: 4vh;
-}
+  height: 4vh; */
+/* } */
 
 /* 소셜 로고 이미지 */
 .login-img {
@@ -92,10 +92,10 @@ input[type='password'] {
   position: relative;
 }
 
-video {
+/* video {
   width: 100%;
   height: 100%;
-}
+} */
 
 .login_box {
   position: absolute;
@@ -111,10 +111,10 @@ video {
     height: 1080px;
   }
 
-  video {
+  /* video {
     height: 100%;
     width: 100%;
-  }
+  } */
 }
 
 

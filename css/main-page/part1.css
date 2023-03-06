@@ -1,17 +1,17 @@
 #main__first {
-  height: 700px;
+  height: 750px;
   display: flex;
   justify-content: space-between;
 }
 #main__first__div {
   position: relative;
   left: 8%;
-  width: 420px;
-  height: 320px;
+  width: 540px;
+  height: 400px;
   background-color: rgb(136, 88, 237);
   border-radius: 40px;
   padding: 20px 70px 60px 70px;
-  margin-top: 100px;
+  margin-top: 150px;
   box-shadow: 10px 10px 20px black, -10px -10px 20px black;
   z-index: 2;
   min-width: 420px;
@@ -31,7 +31,7 @@
   margin-top: 20px;
   background-color: white;
   border: none;
-  padding: 15px 30px;
+  padding: 10px 30px;
   color: rgb(136, 88, 237);
   font-weight: 700;
   font-size: 22px;
@@ -50,7 +50,7 @@
   right: 9%;
   width: 540px;
   height: 700px;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 #main__first__img img {
   width: 540px;
