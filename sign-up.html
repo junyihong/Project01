@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-      <link rel="stylesheet" href="css/style.css">
-    
-<!-- 부트스트랩  -->
-      <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
-      <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 부트스트랩  -->
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 </head>
 
@@ -21,7 +22,6 @@
         type=" video/mp4">
     </video>
     <div class="sign-up-text">
-        <div>
             <!-- 동영상 태그 끝 -->
             <h2 class="sign-up-h2">회원가입</h2>
             <div class="sign-up-container">
@@ -29,48 +29,41 @@
                     <!-- <h4 class="mb-3">회원가입</h4> -->
                     <form action="" id="joinForm">
                         <div class="row">
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-6 mb-2">
                                 <label for="name">이름</label>
                                 <input type="text" class="form-control" id="name" placeholder="" value="" required>
                                 <div class="invalid-feedback">
                                     이름을 입력해주세요.
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-6 mb-2">
                                 <label for="nickname">닉네임</label>
                                 <input type="text" class="form-control" id="nickname" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    별명을 입력해주세요.
-                                </div>
+
                             </div>
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-2">
                             <label for="email">email</label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-                            <div class="invalid-feedback">
-                                이메일을 입력해주세요.
-                            </div>
+                            <input type="email" class="form-control" placeholder="you@example.com" required>
+
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-2">
                             <label for="address">우편번호</label>
-                            <input type="text" class="form-control" id="zipCode" onclick="postCode" required>
+                            <input type="text" class="form-control" onclick="postCode" required>
 
                         </div>
 
-                        <div class="mb-3">
+                        <div class="mb-2">
                             <label for="address">주소</label>
-                            <input type="text" class="form-control" id="address" value="" required>
-                            <div class="invalid-feedback">
-                                주소를 입력해주세요.
-                            </div>
+                            <input type="text" class="form-control" value="" required>
                         </div>
 
-                        <div class="mb-3">
+
+                        <div class="mb-2">
                             <label for="address2">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
-                            <input type="text" class="form-control" id="address2" placeholder="상세주소를 입력해주세요."
-                                value="" />
+                            <input type="text" class="form-control" placeholder="상세주소를 입력해주세요." value="" />
                         </div>
 
                         <div class="row">
@@ -86,7 +79,7 @@
                                     가입 경로를 선택해주세요.
                                 </div>
                             </div>
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-4 mb-2">
                                 <label for="code">추천인 코드</label>
                                 <input type="text" class="form-control" id="code" placeholder="" required>
                                 <div class="invalid-feedback">
@@ -94,7 +87,7 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="mb-4">
+                        <hr class="mb-3">
                         <div class="sign-up-custom-control custom-checkbox">
                             <input type="checkbox" class="sign-up-custom-control-input" id="aggrement" required>
                             <label class="sign-up-custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
@@ -104,7 +97,6 @@
                     </form>
                 </div>
             </div>
-</div>
-</div>
+        </div>
 </body>
 </html>
