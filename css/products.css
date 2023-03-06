@@ -12,8 +12,8 @@
 .products_sidebar {
     /*사이드 메뉴 위치 고정*/
     position: fixed;
-    padding: 30px;
-    margin-top: 4%;
+    padding-left: 150px;
+    margin-top: 20%;
     font-size: 20px;
 }
 
@@ -27,8 +27,8 @@
 
 .products_main {
     /*전체 메인 위치 조정 (사이드 제외하고 전체 이동)*/
-    padding-left: 40px;
-    padding-top: 50px;
+    padding-left: 300px;
+    padding-top: 100px;
     padding-bottom: 70px;
 }
 
@@ -52,10 +52,20 @@
     margin-left: 30px;
 }
 
+.products_sale_link {
+    padding-bottom: 100px;
+    color: black;
+}
+
+
+
+
+
 .products_sale_name {
     /*세일 상품 이름 위치 조정*/
     margin: 10px 0px 10px 50px;
 }
+
 
 .products_sale:link,
 :visited {
@@ -63,6 +73,10 @@
     /*링크 밑줄 삭제*/
     text-decoration: none;
     /*항상 흰색 유지*/
+}
+
+.products_games_link {
+    padding-bottom: 50px;
 }
 
 
@@ -80,6 +94,10 @@
     /*항상 흰색 유지*/
 }
 
+.products_consoles_link {
+    padding-bottom: 50px;
+}
+
 .products_consoles_name {
     /*콘솔 상품 이름 위치 조정*/
     margin: 10px 0px 10px 0px;
@@ -94,10 +112,16 @@
     /*항상 흰색 유지*/
 }
 
+.products_controllers_link {
+    padding-bottom: 50px;
+}
+
 .products_controllers_name {
     /*컨트롤러 상품 이름 위치 조정*/
     margin: 10px 0px 10px -5px;
 }
+
+
 
 .products_raptor_name {
     /*컨트롤러 안 랩터 상품 이름 위치 조정*/
@@ -113,6 +137,9 @@
     /*항상 흰색 유지*/
 }
 
+.products_accessories_link {
+    padding-bottom: 50px;
+}
 
 .products_accessories_name {
     /*악세사리 상품 이름 위치 조정*/
