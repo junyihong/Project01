@@ -25,7 +25,7 @@
   font-size: 70px;
   font-weight: 700;
   line-height: 100%;
-  font-family: "Archivo";
+  font-family: 'Montserrat';
 }
 .go-to-products-btn {
   margin-top: 20px;
@@ -36,7 +36,7 @@
   font-weight: 700;
   font-size: 22px;
   border-radius: 25px;
-  font-family: "Archivo";
+  font-family: 'Montserrat';
   transition: 0.3s linear;
   border: 2px solid white;
   cursor: pointer;

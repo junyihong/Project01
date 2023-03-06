@@ -14,54 +14,60 @@
 <body class="products_body">
     <header>
         <div id="nav">
-            <div id="nav__logo">
-                <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1>
-            </div>
-            <div id="nav__right">
-                <ul class="nav__list">
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="products.html">Products</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-                <ul id="nav__icon">
-                    <input id="search-input" class="hidden" type="text" />
-                    <li id="toggle-vibility">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    <li><a href="login.html"><i class="fa-solid fa-user-tie"></i></a></li>
-                    </li>
-                    <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
-                </ul>
-            </div>
+          <div id="nav__logo">
+            <video autoplay id="logo-mp4" muted height="110px" width="300px">
+              <source src="img/main_logo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div id="nav__right">
+            <ul class="nav__list">
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="products.html">Products</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul id="nav__icon">
+              <input id="search-input" class="hidden" type="text" />
+              <li id="toggle-vibility">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+  
+              <li>
+                <a href="login.html"><i class="fa-solid fa-user-tie"></i></a>
+              </li>
+  
+              <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+          </div>
         </div>
+        <div id="lightoff" class="hidden"></div>
         <div id="cart">
-            <div id="cart__top">
-                <i class="fa-solid fa-angles-right"></i>
-                <span>Cart</span>
-                <span class="padding">I</span>
-            </div>
-            <div id="cart__bottom">
-                <span>Cart is empty</span>
-            </div>
+          <div id="cart__top">
+            <i class="fa-solid fa-angles-right"></i>
+            <span>Cart</span>
+            <span class="padding">I</span>
+          </div>
+          <div id="cart__bottom">
+            <span>Cart is empty</span>
+          </div>
         </div>
-    </header>
+      </header>
 
     <main>
-        <h1>Shop</h1> <!--제목-->
+        <h1 class="products_mainname" id="first">Shop</h1> <!--제목-->
         <div class="products_sidebar"> <!--Side Bar-->
-            <div><a class="products_a" href="#first">On Sale</a></div>
-            <div><a class="products_a" href="#second">Games</a></div>
-            <div><a class="products_a" href="#third">Consoles</a></div>
-            <div><a class="products_a" href="#forth">Controllers</a></div>
-            <div><a class="products_a" href="#fifth">Accessories</a></div>
+            <a class="products_a" href="#first">On Sale</a>
+            <a class="products_a" href="#second">Games</a>
+            <a class="products_a" href="#third">Consoles</a>
+            <a class="products_a" href="#forth">Controllers</a>
+            <a class="products_a" href="#fifth">Accessories</a>
         </div>
         <div class="products_main">
-            <div class="products_sale_link"  id="first"><div class="products_for_salelink"><div class="products_help_salelink">링크 도와주기</div></div></div>
             <p> <!--On Sale name-->
             <div class="products_name">On Sale</div> <!--소제목 1-->
             </p>
@@ -542,7 +548,12 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/nav.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0f1871673a.js"
+      crossorigin="anonymous"
+    ></script>
 </body>
 
 </html>

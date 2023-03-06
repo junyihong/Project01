@@ -14,7 +14,7 @@
   font-size: 50px;
   font-weight: 700;
   line-height: 100%;
-  font-family: "Archivo";
+  font-family: "Montserrat";
 }
 #main2__title {
   padding-top: 150px;
@@ -28,7 +28,7 @@
   font-weight: 700;
   font-size: 18px;
   border-radius: 25px;
-  font-family: "Archivo";
+  font-family: "Montserrat";
   transition: 0.3s linear;
   border: 2px solid white;
   cursor: pointer;
@@ -100,7 +100,7 @@
   font-size: 18px;
   background-color: #8858ed;
   padding: 10px 100px;
-  font-family: "Archivo";
+  font-family: "Montserrat";
   font-weight: 700;
   margin-top: 10px;
   border-radius: 25px;
