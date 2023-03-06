@@ -1,10 +1,3 @@
-/* 기본값 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
-
 /* 전체 값 세팅 */
 .sign-up-body {
     padding: 0px;
@@ -37,10 +30,11 @@
 /* 폼 넓이 조정 */
 #joinForm {
     border-radius: 15px;
-    width: 680px;
+    width: 50%;
+    height: 50%;
     margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: -10px;
+    /* margin-top: 60px;
+    margin-bottom: -10px; */
     padding: 32px;
     border: 1px solid #7c7c7c;
     background: #ffffff;
@@ -52,7 +46,7 @@
 /* 배경 동영상 조정 태그  */
 .sign-up-video {
     width: 100%;
-    height: 400%;
+    height: 100%;
     overflow: hidden;
     margin: 0px auto;
     position: relative;
@@ -64,15 +58,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
 
-/* video-next-level {
+#sign-up-video {
+    width: 100%;
+    height: 100%;
+}
+
+#sign-up-video-next-level {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-} */
+}
 
 /* 버튼  */
 .sign-up-custom-btn {
