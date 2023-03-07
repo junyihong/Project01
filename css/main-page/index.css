@@ -1,6 +1,6 @@
 #index__body {
   font-family: "Source Sans Pro", "Manrope", sans-serif;
-  height: 500vh;
+  height: 380vh;
   position: relative;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -26,7 +26,7 @@
 
 #video-background {
   position: fixed;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 100%;
@@ -45,7 +45,7 @@
   animation-delay: 3s;
 } */
 
-#splash-screen {
+/* #splash-screen {
   background-color: black;
   position: fixed;
   height: 100vh;
@@ -63,4 +63,4 @@
   width: 500px;
   height: 500px;
   z-index: 100;
-}
+} */

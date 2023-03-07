@@ -82,8 +82,7 @@
     /*세일 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 35px;
 }
-.products_sale_1:link,
-:visited {
+.products_sale_1:link {
     /*세일 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 160px;
 }
@@ -93,8 +92,7 @@
     /*세일 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 20px;
 }
-.products_sale_2:link,
-:visited {
+.products_sale_2:link {
     /*세일 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 180px;
 }
@@ -104,8 +102,7 @@
     /*세일 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 60px;
 }
-.products_sale_3:link,
-:visited {
+.products_sale_3:link {
     /*세일 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 180px;
 }
@@ -115,8 +112,7 @@
     /*세일 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -20px;
 }
-.products_sale_4:link,
-:visited {
+.products_sale_4:link {
     /*세일 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 180px;
 }
@@ -126,8 +122,7 @@
     /*세일 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 60px;
 }
-.products_sale_5:link,
-:visited {
+.products_sale_5:link {
     /*세일 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 170px;
 }
@@ -137,8 +132,7 @@
     /*세일 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 35px;
 }
-.products_sale_6:link,
-:visited {
+.products_sale_6:link {
     /*세일 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 170px;
 }
@@ -148,8 +142,7 @@
     /*세일 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 35px;
 }
-.products_sale_7:link,
-:visited {
+.products_sale_7:link {
     /*세일 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 160px;
 }
@@ -159,8 +152,7 @@
     /*세일 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -20px;
 }
-.products_sale_8:link,
-:visited {
+.products_sale_8:link {
     /*세일 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 170px;
 }
@@ -170,8 +162,7 @@
     /*세일 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 50px;
 }
-.products_sale_9:link,
-:visited {
+.products_sale_9:link {
     /*세일 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 180px;
 }
@@ -190,8 +181,7 @@
     /*게임 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -5px;
 }
-.products_games_1:link,
-:visited {
+.products_games_1:link {
     /*게임 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -201,8 +191,7 @@
     /*게임 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -15px;
 }
-.products_games_2:link,
-:visited {
+.products_games_2:link {
     /*게임 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -212,8 +201,7 @@
     /*게임 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 35px;
 }
-.products_games_3:link,
-:visited {
+.products_games_3:link {
     /*게임 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 160px;
 }
@@ -223,8 +211,7 @@
     /*게임 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -20px;
 }
-.products_games_4:link,
-:visited {
+.products_games_4:link {
     /*게임 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 180px;
 }
@@ -234,8 +221,7 @@
     /*게임 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -20px;
 }
-.products_games_5:link,
-:visited {
+.products_games_5:link {
     /*게임 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -245,8 +231,7 @@
     /*게임 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -30px;
 }
-.products_games_6:link,
-:visited {
+.products_games_6:link {
     /*게임 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -263,8 +248,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -40px;
 }
-.products_consoles_1:link,
-:visited {
+.products_consoles_1:link {
     /*콘솔 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -274,8 +258,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -10px;
 }
-.products_consoles_2:link,
-:visited {
+.products_consoles_2:link {
     /*콘솔 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -285,8 +268,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 35px;
 }
-.products_consoles_3:link,
-:visited {
+.products_consoles_3:link {
     /*콘솔 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 160px;
 }
@@ -296,8 +278,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 60px;
 }
-.products_consoles_4:link,
-:visited {
+.products_consoles_4:link {
     /*콘솔 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 170px;
 }
@@ -307,8 +288,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -5px;
 }
-.products_consoles_5:link,
-:visited {
+.products_consoles_5:link {
     /*콘솔 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -318,8 +298,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -15px;
 }
-.products_consoles_6:link,
-:visited {
+.products_consoles_6:link {
     /*콘솔 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -336,8 +315,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 15px;
 }
-.products_controllers_1:link,
-:visited {
+.products_controllers_1:link {
     /*컨트롤러 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 230px;
 }
@@ -347,8 +325,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 15px;
 }
-.products_controllers_2:link,
-:visited {
+.products_controllers_2:link {
     /*컨트롤러 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 230px;
 }
@@ -358,8 +335,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 5px;
 }
-.products_controllers_3:link,
-:visited {
+.products_controllers_3:link {
     /*컨트롤러 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 230px;
 }
@@ -369,8 +345,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 5px;
 }
-.products_controllers_4:link,
-:visited {
+.products_controllers_4:link {
     /*컨트롤러 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -380,8 +355,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 10px;
 }
-.products_controllers_5:link,
-:visited {
+.products_controllers_5:link {
     /*컨트롤러 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 230px;
 }
@@ -391,8 +365,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 60px;
 }
-.products_controllers_6:link,
-:visited {
+.products_controllers_6:link {
     /*컨트롤러 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 180px;
 }
@@ -402,8 +375,7 @@
     /*콘솔 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 60px;
 }
-.products_controllers_7:link,
-:visited {
+.products_controllers_7:link {
     /*컨트롤러 상품 가격 및 이름 위치 조정*/    /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 170px;
 }
@@ -420,8 +392,7 @@
     /*악세사리 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -10px;
 }
-.products_accessories_1:link,
-:visited {
+.products_accessories_1:link {
     /*악세사리 항목 가격*/      /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -431,8 +402,7 @@
     /*악세사리 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 40px;
 }
-.products_accessories_2:link,
-:visited {
+.products_accessories_2:link {
     /*악세사리 항목 가격*/      /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 180px;
 }
@@ -442,8 +412,7 @@
     /*악세사리 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -40px;
 }
-.products_accessories_3:link,
-:visited {
+.products_accessories_3:link {
     /*악세사리 항목 가격*/      /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 230px;
 }
@@ -453,8 +422,7 @@
     /*악세사리 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px 20px;
 }
-.products_accessories_4:link,
-:visited {
+.products_accessories_4:link {
     /*악세사리 항목 가격*/      /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 170px;
 }
@@ -464,8 +432,7 @@
     /*악세사리 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -40px;
 }
-.products_accessories_5:link,
-:visited {
+.products_accessories_5:link {
     /*악세사리 항목 가격*/      /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 230px;
 }
@@ -475,8 +442,7 @@
     /*악세사리 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -40px;
 }
-.products_accessories_6:link,
-:visited {
+.products_accessories_6:link {
     /*악세사리 항목 가격*/      /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 220px;
 }
@@ -486,8 +452,7 @@
     /*악세사리 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -25px;
 }
-.products_accessories_7:link,
-:visited {
+.products_accessories_7:link {
     /*악세사리 항목 가격*/      /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 180px;
 }
@@ -497,8 +462,7 @@
     /*악세사리 상품 이름 위치 조정*/    /*상품 가격 위치 조정 우선해야함*/
     margin: 10px 0px 10px -60px;
 }
-.products_accessories_8:link,
-:visited {
+.products_accessories_8:link {
     /*악세사리 항목 가격*/      /*이거 한 뒤 이름 위치 조정해야함*/
     margin-left: 230px;
 }

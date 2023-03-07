@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
     <link rel="stylesheet" href="css/style.css">
-
     <!-- 부트스트랩  -->
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
     <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
@@ -27,7 +26,7 @@
             <div class="sign-up-container">
                 <div class="form">
                     <!-- <h4 class="mb-3">회원가입</h4> -->
-                    <form action="" id="joinForm">
+                    <form id="joinForm">
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <label for="name">이름</label>
@@ -93,10 +92,11 @@
                             <label class="sign-up-custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
                         </div>
                         <div class="mb-4"></div>
-                        <button class="sign-up-custom-btn btn-8"><span>가입완료</span></button>
+                        <button id="sign-btn" class="sign-up-custom-btn btn-8" type="submit"><span>가입완료</span></button>
                     </form>
                 </div>
             </div>
         </div>
+        <script src="js/sign-up.js"></script>
 </body>
 </html>

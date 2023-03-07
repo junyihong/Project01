@@ -16,7 +16,8 @@ function showInput() {
     navList.style.transform = "translateX(0px)";
   } else {
     searchInput.style.width = "200px";
-    navList.style.transform = "translateX(-30px)";
+    navList.style.transform = "translateX(-20px)";
+    document.querySelector("#nav__icon").style.Width = "495";
   }
 }
 function showCartList() {

@@ -17,7 +17,9 @@
 
   <body class="login_body">
     <video id="loing-video" muted autoplay loop>
-      <source src="https://www.desktophut.com/files/1654788099-1654788099-pc-futuristic-game-room-1-live-wallpaper-free.mp4" type="video/mp4">
+      <source
+        src="https://www.desktophut.com/files/1654788099-1654788099-pc-futuristic-game-room-1-live-wallpaper-free.mp4"
+        type="video/mp4">
     </video>
     <div class="login_box">
       <div>
@@ -28,11 +30,10 @@
           </div>
 
           <div class="login_form">
-            <form class="form-group py-1 pb-2">
-
+            <form action="index.html" class="form-group py-1 pb-2">
               <div class="login-input-field">
                 <span class="far fa-user px-2"></span>
-                <input class="login-input-text_pw" type="text" placeholder="아이디를 입력하세요" required>
+                <input id="login-input-id" class="login-input-text_pw" type="text" placeholder="아이디를 입력하세요" required>
               </div>
               <div class="login-input-field">
                 <span class="fa fa-lock px-2"></span>
@@ -44,7 +45,7 @@
                   class="font-weight-bold">비밀번호 찾기</a> </div>
               <br>
               <div class="frame">
-                <button class="login-custom-btn btn-8"><span>Login</span></button>
+                <button class="login-custom-btn btn-8" type="submit"><span>Login</span></button>
               </div>
               <div class="text-center pt-4 text-muted">아직 회원이 아니신가요? <a href="sign-up.html">회원가입</a>
             </form>
@@ -55,19 +56,28 @@
           </div>
           <div class="mt-4">
             <a class="login_social_icon" href="https://wwww.facebook.com">
-              <img class="login-img" src="https://github.com/junyihong/Project01/blob/main/img/login_icons/login_facebook.png?raw=true" alt="facebook">
+              <img class="login-img"
+                src="https://github.com/junyihong/Project01/blob/main/img/login_icons/login_facebook.png?raw=true"
+                alt="facebook">
             </a>
             <a class="login_social_icon" href="https://www.google.com">
-              <img class="login-img" src="https://github.com/junyihong/Project01/blob/main/img/login_icons/login_google.png?raw=true" alt="google">
+              <img class="login-img"
+                src="https://github.com/junyihong/Project01/blob/main/img/login_icons/login_google.png?raw=true"
+                alt="google">
             </a>
             <a class="login_social_icon" href="https://www.instagram.com/">
-              <img class="login-img" src="https://github.com/junyihong/Project01/blob/main/img/login_icons/login_Instagram.png?raw=true" alt="instagram">
+              <img class="login-img"
+                src="https://github.com/junyihong/Project01/blob/main/img/login_icons/login_Instagram.png?raw=true"
+                alt="instagram">
             </a>
             <a class="login_social_icon"
               href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fsharer.kakao.com%2Fpicker%2Flink%3Fapp_key%3D4e0f02e43248fed6c5850431ea527a61%26short_key%3D7aa5d1df-50d6-418c-ae24-997cd5da00ff#login">
-              <img class="login-img" src="https://github.com/junyihong/Project01/blob/main/img/login_icons/login_kakao.png?raw=true" alt="kakao">
+              <img class="login-img"
+                src="https://github.com/junyihong/Project01/blob/main/img/login_icons/login_kakao.png?raw=true"
+                alt="kakao">
           </div>
         </div>
+        <script src="js/login-greeting.js"></script>
   </body>
 
 </html>
