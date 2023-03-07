@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="D:\html\chat.bot.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".text__icon").hide();
+        $("button.bot").click(function () {
+          $(".text__icon").slideToggle(600);
+        });
+      });
+    </script>
+  </head>
+  <body style="background-color: black">
+    <!-- DONT TOUCH  CHAT BOT -->
+    <div>
+      <div class="chat">
+        <button class="bot">
+          <img class="chat__img" src="" alt="" />
+        </button>
+        <div class="text__icon">
+          <div class="chat__log1">User Info</div>
+          <div class="chat__log2">Profile</div>
+          <div class="chat__message">
+            <div class="mk2">
+              Hey there, please leave your details so we can contact you even if
+              you are no longer on the site.
+            </div>
+          </div>
+          <div class="chat__message1">
+            <br />
+            <input class="mk" type="text" placeholder="name" /> <br />
+            <br />
+            <input class="mk" type="email" placeholder="email" />
+            <br />
+            <button class="submit_btn" value="submit">
+              <a href="#">submit</a>
+            </button>
+          </div>
+          <br />
+          <div class="text__string">
+            <input
+              class="tex"
+              type="text"
+              placeholder="    type your message"
+            />
+            <button class="tex__sub" type="submit">
+              <a href="">Click</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

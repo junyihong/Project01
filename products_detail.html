@@ -103,24 +103,29 @@
           <div class="s1">
             <a href="../Project01\index.html"> Home </a> >
             <a href="../Project01\products.html"> Product </a>
-            > Gameflow Black
+            > <span style="color: gray"> Gameflow Black </span>
+            <a class="page__move" href=""> Next -></a>
+            <span class="page__move">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <span class="page__move1" href=""><- Prev</span>
+            <!-- 다음 창부터는 Prev에 span태그 말고 a태그 
+            마지막 물품에는 Next가 span 태그가 됨 -->
           </div>
-          <div><a href="">next</a> > <a href="">pre</a></div>
+          <br />
+          <br />
           <div class="pd__img">
             <img
+              id="img1"
               src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_625,h_469,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
               alt=""
             />
           </div>
           <div class="box1">
             <div class="naming">Gameflow Black</div>
-
             <br />
-            <div class="price">Price : <del>1,000$</del> → 799.98$!!</div>
+            <div class="price">Price : <del>₩ 1,222,000</del> → ₩999,000</div>
             <br />
-
             <br />
-            <div class="quantity">Quantity : <br /></div>
+            <div class="quantity">Quantity :</div>
             <input
               class="quantity_sub"
               type="number"
@@ -130,29 +135,51 @@
             />
             <br />
             <br />
-            <div class="op__">
-              Option :
-              <br />
+            <div class="option__">Option :</div>
+            <div>
               <select class="poi" name="" id="">
+                dfdsfsdf
                 <option value="" selected>Add more Option</option>
-
-                <option value="">add product + 800$</option>
-                <option value="">more parts + 100$</option>
+                <option value="">add product +</option>
+                <option value="">more parts +</option>
               </select>
-              <br />
-              <br />
-              <br />
-              <div>
-                <button id="buy__btn" type="button">
-                  <a href="../Project01\login.html"> Add to Cart </a>
-                </button>
-              </div>
             </div>
             <br />
+            <br />
+            <br />
+            <div>
+              <button id="buy__btn" type="button">
+                <a href="../Project01\login.html"> Add to Cart </a>
+              </button>
+            </div>
+
+            <br />
+          </div>
+          <div class="zz">
+            <img
+              id="img"
+              src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
+              onclick="toggleImg()"
+            />
+
+            <script>
+              function toggleImg() {
+                document.getElementById("img1").src =
+                  "https://static.wixstatic.com/media/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.jpg/v1/fill/w_500,h_375,al_c,q_85,usm_0.66_1.00_0.01/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.webp";
+              }
+            </script>
+            <!-- <img
+              src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
+              alt=""
+            />
+            <img
+              src="https://static.wixstatic.com/media/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.jpg/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.webp"
+              alt=""
+            /> -->
           </div>
           <div class="detail__big">
-            This area is product detail introduce text
-            <div><button class="view__btn__first">view more +</button></div>
+            Product Info
+            <button class="view__btn__first">view more info +</button>
             <div class="view__down__first">
               I'm a product description. This is a great place to "sell" your
               product and grab buyers' attention. Describe your product clearly
@@ -161,7 +188,7 @@
             </div>
           </div>
           <div class="detail__small">
-            detail product introduce title
+            Policy Info
             <div>
               <button class="view__btn__second">Product Info detail +</button>
               <br />
