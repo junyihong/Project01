@@ -1,13 +1,12 @@
+
 /* 폰트 import*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Manrope:wght@300;400&family=Source+Sans+Pro:wght@300;400;700&display=swap");
 /* login font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet&family=IBM+Plex+Sans+KR&family=Montserrat:wght@700&family=Noto+Serif+KR&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&family=IBM+Plex+Sans+KR&family=Montserrat:wght@700;800&family=Noto+Serif+KR&display=swap');
 /* 브라우저의 default 스타일 값 초기화 */
 @import "reset.css";
-
 /* --------------------------------------- */
 @import "nav&foot/nav-bar.css";
 @import "nav&foot/footer.css";
@@ -25,28 +24,22 @@
 @import "login.css";
 @import "sign-up.css";
 
-h1{
+h1 {
   font-size: 50px;
   font-family: 'kaushan Script';
 }
+
 main {
   margin-top: 120px;
 }
-p,
-span,
-h1,
-h2,
-li,
-div,
-a {
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  word-spacing: 5px;
 
-}
+
+
 /* 변수지정 */
 :root {
   --point-color: rgb(186, 88, 237);
   --space: 8px 20px;
   --sub-color: rgb(50, 50, 50);
   --font-size: 24px;
+  --font-bold: 'Montserrat';
 }

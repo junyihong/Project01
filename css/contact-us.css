@@ -1,5 +1,4 @@
 #contact-us__main {
-  height: 200vh;
   background-color: black;
   color: white;
 }
@@ -13,10 +12,13 @@
 #contact__title {
   padding: 20px 7%;
   min-width: 550px;
+}
+#contact__title span{
+  display: inline-block;
+  padding-top: 50px;
   font-size: 70px;
-  font-weight: 700;
   font-family: "Montserrat";
-  padding-bottom: 50px;
+  font-weight: 700;
 }
 
 #contact__left {
@@ -32,6 +34,7 @@
 #contact__subtitle {
   display: inline-block;
   padding-bottom: 70px;
+  font-family: "Montserrat";
 }
 
 #contact__info {
@@ -53,7 +56,7 @@
 #contact__form {
   position: relative;
   left: 15%;
-  top: 30px;
+  top: 100px;
   width: 500px;
   min-width: 450px;
   padding-left: 5%;
@@ -134,38 +137,79 @@
 /* --------FAQ 파트 ---------------- */
 
 #contact__bottom {
+  position: relative;
   margin-top: 100px;
   padding: 20px 7%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(20,5,20);
+  justify-content: flex-start;
+  background-color: rgb(22,10,42);
 }
 #FAQ__col1 {
   display: inline-block;
   font-weight: 700;
   font-family: "Montserrat";
   font-size: 40px;
+  margin:50px 0; 
 }
-#FAQ__col2{
-  width: 50%;
+.tab{
+  width: 800px;
+  align-items: left;
+  margin-bottom: 50px;
+}
+.tab button{
+  color: white;
   font-size: 20px;
-  padding: 20px;
-  text-align: center;
+  background-color: transparent;
+  border: none;
+  margin-right: 30px;
+  padding: 5px 15px;
+  cursor: pointer;
 }
-.FAQ__title {
-  display: inline-block;
-  margin: 0 20px 15px 0;
-  font-size: 15px;
+.tab button.active {
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: rgba(90, 72, 72, 0.3);
+}
+#FAQ__col3 {
+  display: block;
+  align-items: left;
+  width: 800px;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 100px;
 }
 .FAQ__Q{
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   padding: 30px 0;
+  font-size: 18px;
   cursor: pointer;
+  border-bottom: 1px solid rgb(136, 88, 237);
+  transition: 0.3s ease-in-out;
+}
+.FAQ__Q:hover{
+  font-weight: 700;
+}
+.FAQ__Q .fa-chevron-down {
+  position: absolute;
+  right: 5px;
+}
+.FAQ__A{
+  display: block;
+  margin-top: 30px;
+}
+.FAQ__A ul{
+  margin-top: 20px;
 }
 .sns-icons li{
   display: inline;
   font-size: 25px;
   margin-right: 15px;
+}
+.FAQ__tabcontent{
+  display: none;
+}
+.FAQ__tabcontent.show {
+  display: block;
 }
