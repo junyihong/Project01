@@ -26,13 +26,13 @@
 
 h1 {
   font-size: 50px;
-  font-family: 'kaushan Script';
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
   margin-top: 120px;
 }
-
 
 
 /* 변수지정 */

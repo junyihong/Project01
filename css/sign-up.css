@@ -28,7 +28,8 @@
 }
 
 /* 폼 넓이 조정 */
-#joinForm {
+#joinForm{
+    display: block;
     border-radius: 15px;
     width: 50%;
     height: 50%;
@@ -157,5 +158,151 @@
 }
 
 .btn-8 span:hover:after {
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+
+
+/* ---------------------버튼 누르면 나오는 새로운 창-------------------------- */
+#newWindow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    width: 40%;
+    min-width: 600px;
+    white-space:nowrap;
+    height: 50vh;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 32px;
+    border: 1px solid #7c7c7c;
+    background: #ffffff;
+    /* 로그인 폼 투명도 */
+    box-shadow: 20px 20px 20px rgb(0, 0, 0);
+    /* animation-name: showWindow;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s; */
+    transition: 0.5s ease-in-out; 
+}
+@keyframes showWindow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+#newWindow span {
+    display: inline-block;
+    padding-top: 4px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+#newWindow a {
+    width: 80%;
+}
+.newBtn {
+    height: 5vh;
+    color: #fff;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #2cd3bd;
+    background-image: linear-gradient(315deg, #0104a8 0%, #9225e6 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+.newBtn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.newBtn:hover {
+    background: transparent;
+}
+.newBtn span:hover {
+    color: #8f00fc;
+}
+.newBtn:before,
+.newBtn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #8c00f7;
+    transition: all 0.3s ease;
+}
+
+.newBtn:before {
+    height: 0%;
+    width: 2px;
+}
+
+.newBtn:after {
+    width: 0%;
+    height: 2px;
+}
+
+.newBtn:hover:before {
+    height: 100%;
+}
+
+.newBtn:hover:after {
+    width: 100%;
+}
+
+.newBtn:hover {
+    background: transparent;
+}
+
+.newBtn span:hover {
+    color: #8f00fc;
+}
+
+.newBtn span:before,
+.newBtn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #029bfa;
+    transition: all 0.3s ease;
+}
+
+.newBtn span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.newBtn span:after {
+    height: 2px;
+    width: 0%;
+}
+
+.newBtn span:hover:before {
+    height: 100%;
+}
+
+.newBtn span:hover:after {
     width: 100%;
 }
