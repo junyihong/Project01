@@ -71,6 +71,7 @@
 .hidden {
   visibility: hidden;
   border: none;
+  display: none;
 }
 #search-input {
   position: relative;

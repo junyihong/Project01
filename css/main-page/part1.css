@@ -6,15 +6,15 @@
 #main__first__div {
   position: relative;
   left: 8%;
-  width: 540px;
-  height: 400px;
+  width: 450px;
+  height: 350px;
   background-color: rgb(136, 88, 237);
   border-radius: 40px;
-  padding: 20px 70px 60px 70px;
+  padding: 20px 70px;
   margin-top: 150px;
   box-shadow: 10px 10px 20px black, -10px -10px 20px black;
   z-index: 2;
-  min-width: 420px;
+  min-width: 450px
 }
 #main__first__p {
   font-size: 25px;

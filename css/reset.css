@@ -98,3 +98,14 @@ ol,
 ul {
   list-style: none;
 }
+p,
+span,
+h1,
+h2,
+li,
+div,
+a,
+button {
+  font-family: 'Manrope', 'IBM Plex Sans KR','Monsterrat', sans-serif;
+  word-spacing: 5px;
+}
