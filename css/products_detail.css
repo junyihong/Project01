@@ -2,7 +2,9 @@
   padding: 0px;
   margin: 0px;
 }
-
+.zzzzz{
+  display: inline;
+}
 .pd__background {
   /* background-color: black;
     width: 100%;
@@ -12,7 +14,8 @@
   /* position: fixed; */
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  padding-top: 100px;
+  /* min-height: 100vh; */
   /* padding-top: 100px; */
 }
 .pd__backgroundblack {
@@ -23,6 +26,8 @@
 .s1 {
   color: white;
   font-size: 18px;
+  display: inline;
+  
 }
 .naming {
   font-size: 32px;
@@ -103,7 +108,7 @@ input[type="number"] {
   padding-top: 50px;
   float: left;
   width: 625px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .detail__big > div {
   font-size: 20px;
@@ -140,15 +145,13 @@ input[type="number"] {
   border: 3px solid white;
   border-radius: 10px;
   color: white;
-  transform: translate(95px, 250px);
+  transform: translate(95px, 300px);
 }
-
 .chat__log1 {
   width: 200px;
   height: 25px;
   border: 1px solid white;
   border-radius: 5px 5px 0px 0px;
-
   vertical-align: middle;
 }
 .chat__log2 {
@@ -162,12 +165,22 @@ input[type="number"] {
   width: 200px;
   height: 40px;
   position: fixed;
-  font-size: 13px;
-  vertical-align: bottom;
+  font-size: 20px;
   border-radius: 0px 0px 5px 5px;
   /* margin-top: 4px; */
   border: none;
+  background-color: white;
 }
+.tex {
+  border: none;
+  width: 150px;
+}
+.tex__sub {
+  border: none;
+  background-color: white;
+  color: lightslategray;
+}
+
 .chat {
   display: flex;
   /* padding-left: 30px; */
@@ -224,13 +237,14 @@ input[type="number"] {
   background-color: rgb(0, 0, 0);
   color: white;
   font-size: 20px;
-
   width: 400px;
-  height: 50px;
+  height: 40px;
   text-align: left;
 }
 .view__down__first {
   color: blue;
+  width: 600px;
+  line-height: 100%;
 }
 .view__btn__second {
   background-color: rgb(0, 0, 0);
@@ -243,7 +257,8 @@ input[type="number"] {
 }
 .view__down__second {
   color: blue;
-  /* width: 400px; */
+  width: 400px;
+  line-height: 100%;
 }
 .view__btn__second-1 {
   background-color: rgb(0, 0, 0);
@@ -258,6 +273,7 @@ input[type="number"] {
 .view__down__second-1 {
   color: blue;
   width: 400px;
+  line-height: 100%;
 }
 .view__btn__second-2 {
   background-color: rgb(0, 0, 0);
@@ -272,4 +288,5 @@ input[type="number"] {
 .view__down__second-2 {
   color: blue;
   width: 400px;
+  line-height: 100%;
 }

@@ -12,7 +12,7 @@
     $(document).ready(function () {
       $(".view__down__first").hide();
       $("button.view__btn__first").click(function () {
-        $("div.view__down__first").slideToggle("slow");
+        $("div.view__down__first").slideToggle();
       });
     });
   </script>
@@ -21,6 +21,8 @@
       $(".view__down__second").hide();
       $("button.view__btn__second").click(function () {
         $("div.view__down__second").slideToggle();
+        $("div.view__down__second-1").slideUp(400);
+        $("div.view__down__second-2").slideUp(400);
       });
     });
   </script>
@@ -28,7 +30,9 @@
     $(document).ready(function () {
       $(".view__down__second-1").hide();
       $("button.view__btn__second-1").click(function () {
-        $("div.view__down__second-1").slideToggle("slow");
+        $("div.view__down__second-1").slideToggle();
+        $("div.view__down__second").slideUp(400);
+        $("div.view__down__second-2").slideUp(400);
       });
     });
   </script>
@@ -36,7 +40,9 @@
     $(document).ready(function () {
       $(".view__down__second-2").hide();
       $("button.view__btn__second-2").click(function () {
-        $("div.view__down__second-2").slideToggle("slow");
+        $("div.view__down__second-2").slideToggle();
+        $("div.view__down__second").slideUp(400);
+        $("div.view__down__second-1").slideUp(400);
       });
     });
   </script>
@@ -48,15 +54,7 @@
       });
     });
   </script>
-  <!-- <script>
-    $(document).ready(function () {
-      $(".text__icon").hide();
-      $("button.bot").keypress(function () {
-        $(".text__icon").slideDown("slow");
-      });
-    });
-  </script> -->
-
+  <script></script>
   <body>
     <header>
       <div id="nav">
@@ -103,10 +101,11 @@
       <div class="pd__background">
         <div>
           <div class="s1">
-            <a href="#"> home </a> >
-            <a href=""> product </a>
-            > detail
+            <a href="../Project01\index.html"> Home </a> >
+            <a href="../Project01\products.html"> Product </a>
+            > Gameflow Black
           </div>
+          <div><a href="">next</a> > <a href="">pre</a></div>
           <div class="pd__img">
             <img
               src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_625,h_469,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
@@ -114,7 +113,7 @@
             />
           </div>
           <div class="box1">
-            <div class="naming">WAGs gaming product name</div>
+            <div class="naming">Gameflow Black</div>
 
             <br />
             <div class="price">Price : <del>1,000$</del> → 799.98$!!</div>
@@ -126,7 +125,7 @@
               class="quantity_sub"
               type="number"
               min="0"
-              max="100"
+              max="50"
               placeholder="1"
             />
             <br />
@@ -136,20 +135,16 @@
               <br />
               <select class="poi" name="" id="">
                 <option value="" selected>Add more Option</option>
-                <option value="">color point red + 50$</option>
-                <option value="">color point white + 50$</option>
-                <option value="">color point blue + 50$</option>
+
                 <option value="">add product + 800$</option>
                 <option value="">more parts + 100$</option>
               </select>
               <br />
               <br />
               <br />
-              <br />
-
               <div>
                 <button id="buy__btn" type="button">
-                  <a href="#"> Add to Cart </a>
+                  <a href="../Project01\login.html"> Add to Cart </a>
                 </button>
               </div>
             </div>
@@ -159,8 +154,10 @@
             This area is product detail introduce text
             <div><button class="view__btn__first">view more +</button></div>
             <div class="view__down__first">
-              이곳은 설명칸으로 사용될 예정dsddddfdfb <br />
-              dsfdsfdsfsdfdsfd
+              I'm a product description. This is a great place to "sell" your
+              product and grab buyers' attention. Describe your product clearly
+              and concisely. Use unique keywords. Write your own description
+              instead of using manufacturers' copy.
             </div>
           </div>
           <div class="detail__small">
@@ -169,12 +166,13 @@
               <button class="view__btn__second">Product Info detail +</button>
               <br />
               <div class="view__down__second">
-                real detail introduce product, <br />
-                somebody help dsfjsdfdsdfdfsdfdsd <br />
-                sfsdfsdfsdfdsvxcvxcvrehwssd <br />
-                sddsfdsf dsfjsdfdsdfdfsdfdsdsf <br />
-                sdfsdfsdfdsvxcvxcvrehw <br />
-                ssdsddsfdsf
+                I'm a product detail. I'm a great place to add more information
+                about your product such as sizing, material, care and cleaning
+                instructions. This is also a great space to write what makes
+                this product special and how your customers can benefit from
+                this item. Buyers like to know what they’re getting before they
+                purchase, so give them as much information as possible so they
+                can buy with confidence and certainty.
               </div>
               <br />
               <button class="view__btn__second-1">
@@ -182,16 +180,22 @@
               </button>
               <br />
               <div class="view__down__second-1">
-                real detail introduce product, somebody help
-                <br />dsfjsdfdsdfdfsdfds <br />dsfsdfsdfsdfdsvxcvxcvrehwssdsd
+                I’m a Return and Refund policy. I’m a great place to let your
+                customers know what to do in case they are dissatisfied with
+                their purchase. Having a straightforward refund or exchange
+                policy is a great way to build trust and reassure your customers
+                that they can buy with confidence.
               </div>
               <br />
               <button class="view__btn__second-2">
                 Shopping Info detail +
               </button>
               <div class="view__down__second-2">
-                real detail introduce product, somebody help
-                <br />dsfjsdfdsdfdfsdfds <br />dsfsdfsdfsdfdsvxcvxcvrehwssdsd
+                I'm a shipping policy. I'm a great place to add more information
+                about your shipping methods, packaging and cost. Providing
+                straightforward information about your shipping policy is a
+                great way to build trust and reassure your customers that they
+                can buy from you with confidence.
               </div>
             </div>
           </div>
@@ -219,11 +223,16 @@
                 </button>
               </div>
               <br />
-              <input
-                class="text"
-                type="text"
-                placeholder="    type your message"
-              />
+              <div class="text">
+                <input
+                  class="tex"
+                  type="text"
+                  placeholder="    type your message"
+                />
+                <button class="tex__sub" type="submit">
+                  <a href="">Click</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -286,19 +295,3 @@
     ></script>
   </body>
 </html>
-버튼 마우스 올렸을때 그라데이션 효과 알림톡dddddddcxvcvcxvcxvcxdssdasdsa
-<!-- <script>
-  $( document ).ready( function() {
-    $(this).hide()
-    $( 'button.view__btn' ).click( function() {
-      $( '.view__slidedown' ).slideDown();
-    } );
-  } );
-</script>
-<style>
-  .b { display: none; height: 100px; background-color: #bbdefb; }
-</style>
-<p><button class="a">Click</button></p>
-<div class="b"></div> -->
-class a에 해당하는 버튼을 클릭하면 class b에 해당하는 효과가 내려온다 채팅봇
-마우스 클릭스 엔터 버튼 생성
