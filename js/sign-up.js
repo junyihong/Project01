@@ -11,9 +11,9 @@ function congratulationJoin (event) {
 let opc = 0;
 
 function animate() {
-    opc += 0.5;
+    opc += 0.05;
     newWindow.style.opacity = opc;
-    if(opc < 1) {
+    if(opc < 0.75) {
         requestAnimationFrame(animate);
     }
 }

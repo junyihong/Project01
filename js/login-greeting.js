@@ -15,9 +15,3 @@ function paintGreeting(username){
 
 loginForm.addEventListener("submit", onLoginSubmit);
 
-
-if(savedUsername === null) {
-    loginForm.addEventListener("submit", onLoginSubmit);
-} else {
-    paintGreeting(savedUsername)
-}
