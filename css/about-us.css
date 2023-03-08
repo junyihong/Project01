@@ -1,17 +1,24 @@
 
 .about-us--main {
-    height: 2700px;
+    height: 2300px;
     background: black;
 }
 .about-us-main { 
     padding-top: 150px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     color:#FFF;
 }
-.slide-in-w {
+.part5-neon {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 7px rgb(7, 7, 7), 0 0 10px rgb(0, 0, 0), 0 0 21px rgb(255, 255, 255), 0 0 42px rgb(140, 0, 255),
+        0 0 82px rgb(115, 0, 119);
+        font-size: 100px;
+      
+    }
+/* .slide-in-w {
   animation: slide-in-top 3.0s  both;
   animation: slide-in-top 3.0s  both;
       font-size: 100px;
@@ -33,7 +40,7 @@
   animation: slide-in-top 6.0s both;
       margin-left: 20px;
       font-size: 60px;
-}
+} */
 @keyframes slide-in-top {
   0% {
       transform: translateY(-1000px);
@@ -68,11 +75,12 @@
       justify-content: space-between;
       text-align: center;
       width: 100%;
-      height: 230px;
-      background: linear-gradient( rgb(37, 13, 59),rgb(29, 18, 44));
+      height: 250px;
+      background-size: 100%;
+      background-image: url("https://ak.picdn.net/shutterstock/videos/1020718915/thumb/1.jpg");
  }
  .introtext {
-      padding: 0px 200px 0px 200px;
+      padding: 0px 180px 0px 180px;
       color: white;
  }
 .game_box {
@@ -81,7 +89,7 @@
     justify-content: space-between;
     width: 80%;
     height: 400px;
-    padding: 10%
+    padding: 10%;
 }
 .game_slide {
       width: 600px;
@@ -123,11 +131,27 @@
       height: 400px;
       font-size: 20px;
       color:#FFF;
-      border-color: #ed2924 #d8b100 #00a750;
+      box-sizing: border-box;
+      border: 5px;
       border-style: solid;
-      border-width: 5px;
+      --angle: 0deg;
+      border-image: linear-gradient(var(--angle),#5f034c, #9198e5) 1;
+      border-image-slice: 1;
+      animation: 3s rotate linear infinite;
 }
+@keyframes rotate {
+      to {
+            --angle: 360deg;
+      }
+}
+@property --angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+}
+
 /* 게임이미지 슬라이드 끝 */
+
 
 /* 장비이미지 슬라이드 시작 */
 
@@ -137,6 +161,7 @@
       justify-content: space-between;
       width: 80%;
       height: 400px;
+      padding-top: 300px;
   }
 
 .item_slide {
@@ -150,7 +175,7 @@
       padding-left: 12%;
       position: absolute;
       animation: slide 20s infinite;
-      opacity: 0;   
+      opacity: 0;
 }
 .item_slide > img:nth-child(2){
       animation-delay: 5s;
@@ -180,20 +205,25 @@
       width: 40%;
       font-size: 20px;
       color:#FFF;
-      border-color: #ed2924 #d8b100 #00a750;
+      box-sizing: border-box;
+      border: 5px;
       border-style: solid;
-      border-width: 5px;
-     
+      border-image: linear-gradient(var(--angle),#5f034c, #e7ef4b) 1;
+      border-image-slice: 1;
+      animation: 3s rotate linear infinite;
 }
-.map_text {
-      padding-top: 10%;
-      text-align: center;
-      font-size: 40px;
-      color: white;
+@keyframes rotate {
+      to {
+            --angle: 360deg;
+      }
+      from {
+            --angle: 0deg;
+      }
 }
-.map_box {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      padding-top: 20px;
-}
+/* @property --angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+} */
+
+/* 장비이미지 슬라이드 끝 */
