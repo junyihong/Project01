@@ -37,7 +37,7 @@
 
 .products_main_name {
     /*Shop 위치 조정*/
-    padding-left: 250px;
+    padding-left: 270px;
     padding-top: 30px;
 }
 
@@ -72,7 +72,7 @@
 
 .products_main {
     /*전체 메인 위치 조정 (사이드 제외하고 전체 이동)*/
-    padding-left: 120px;
+    padding-left: 140px;
     padding-top: 70px;
     padding-bottom: 70px;
 }
