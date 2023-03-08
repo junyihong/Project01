@@ -6,14 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>1차 프로젝트 회사 소개</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="js/jquery-3.6.3.min.js"></script>
 </head>
 
 <body>
   <header>
     <div id="nav">
       <div id="nav__logo">
-       <a href="index.html"> <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1></a>
+        <a href="index.html"><video autoplay id="logo-mp4" muted height="110px" width="300px">
+          <source src="img/main_logo.mp4" type="video/mp4" />
+        </video></a>
       </div>
       <div id="nav__right">
         <ul class="nav__list">
@@ -24,7 +27,7 @@
             <a href="products.html">Products</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
           </li>
         </ul>
         <ul id="nav__icon">
@@ -37,6 +40,7 @@
         </ul>
       </div>
     </div>
+    <div id="lightoff" class="hidden"></div>
     <div id="cart">
       <div id="cart__top">
         <i class="fa-solid fa-angles-right"></i>
@@ -50,10 +54,11 @@
   </header>
   <main class="about-us--main">
     <div class="about-us-main">
-      <h1 class="slide-in-w">W</h1>
+      <h1 class="part5-neon">WAGs</h1>
+      <!-- <h1 class="slide-in-w">W</h1>
       <h1 class="slide-in-a">A</h1>
       <h1 class="slide-in-g">G</h1>
-      <h1 class="slide-in-s">s</h1>
+      <h1 class="slide-in-s">S</h1>  슬라이드 코드-->
     </div>
     <div class="introbox">
       <div class="introtext">
@@ -67,8 +72,8 @@
         가치를 만듭니다.
       </div>
       <div class="introtext">
-        <h1><b>apex</b></h1><br>
-        <span style="color:rgb(71, 166, 203); font-size: 15px; font-weight:bold;">
+        <h1><b>Apex</b></h1><br>
+        <span style="color:rgb(249, 249, 249); font-size: 20px; font-weight:bold;">
           정상을 향한 열정
         </span><br><br>
         항상 끊임없이 시도하며<br>
@@ -76,28 +81,28 @@
         도전을 멈추지 않습니다.
       </div>
       <div class="introtext">
-        <h1><b>growth</b></h1><br>
-        <span style="color:rgb(71, 166, 203); font-size: 15px; font-weight:bold;">
+        <h1><b>Growth</b></h1><br>
+        <span style="color:rgb(249, 249, 249); font-size: 20px; font-weight:bold;">
           새로운 생각으로 성장
         </span><br><br>
         빠르게 변화하는 시대에<br>
         유저들과 함께 성장하는<br>
-        Wags가 되겠습니다.
+        WAGS가 되겠습니다.
       </div>
     </div>
     <div class="game_box">
       <div class="game_slide">
-        <img class="game_img" src="https://github.com/junyihong/Project01/blob/main/img/gameslide1.jpg?raw=true">
-        <img class="game_img" src="https://github.com/junyihong/Project01/blob/main/img/gameslide2.jpg?raw=true">
-        <img class="game_img" src="https://github.com/junyihong/Project01/blob/main/img/gameslide3.jpg?raw=true">
-        <img class="game_img" src="https://github.com/junyihong/Project01/blob/main/img/gameslide4.jpg?raw=true">
+        <img class="game_img" src="https://cdn.akamai.steamstatic.com/steam/apps/601150/ss_d1e0b403f593f17ad195c5382a7788d71c6f406a.1920x1080.jpg?t=1675151951">
+        <img class="game_img" src="https://cdn.akamai.steamstatic.com/steam/apps/1085660/ss_afc1f202f7ab71adca7d1e503138d89c5689e716.1920x1080.jpg?t=1677611723">
+        <img class="game_img" src="https://cdn.akamai.steamstatic.com/steam/apps/1142710/ss_086d9d777d14d64c9e8bc1713b088381033dfeeb.1920x1080.jpg?t=1678143931">
+        <img class="game_img" src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt7129f3c39301ece2/61453642f725af79f53fc987/9212021_PatchNotes3.06_Kayo_Astra_1920x1080.jpg?auto=webp&disable=upscale&height=549">
       </div>
       <div class="game_text">
-        <p> Wag은 인디게임부터 대규모 게임 개발사의<br>
+        WAGs는 인디게임부터 대규모 게임 개발사의<br>
         AAA게임들까지 전세계 모든 게임을 플레이하고<br>
         게임에 대해 토론하고 즐길 수 있습니다.<br>
         롤플레잉게임 레이싱게임 FPS게임 MMORPG등<br>
-        다양한 게임을 즐겨보세요.</p>
+        다양한 게임을 즐겨보세요.
       </div>
     </div>
     <div class="item_box">
@@ -109,40 +114,11 @@
 
       </div>
       <div class="item_slide">
-        <img class="item_img" src="https://github.com/junyihong/Project01/blob/main/img/itemslide1.jpg?raw=true">
-        <img class="item_img" src="https://github.com/junyihong/Project01/blob/main/img/itemslide3.jpg?raw=true.jpg">
-        <img class="item_img" src="https://github.com/junyihong/Project01/blob/main/img/itemslide2.jpg?raw=true.jpg">
-        <img class="item_img" src="https://github.com/junyihong/Project01/blob/main/img/itemslide4.jpg?raw=true.jpg">
+        <img class="item_img" src="img/Playbox_XZ_Gold_Edition.webp">
+        <img class="item_img" src="img/Echo_Headset.webp">
+        <img class="item_img" src="img/Mach_Gaming_Chair.webp">
+        <img class="item_img" src="img/Spartan_Mechanical_Keyboard.webp">
       </div>
-    </div>
-    <div class="map_text">
-      <h1>위치 안내</h1>
-    </div>
-    <div class="map_box">
-      <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:500px; height:332px; color:#333;">
-        <div style="height: 300px;">
-          <a href="https://map.kakao.com/?urlX=523700.0&amp;urlY=1069570.0&amp;itemId=27103214&amp;q=%EC%84%B1%EB%82%A8%20%EA%B7%B8%EB%A6%B0%EC%BB%B4%ED%93%A8%ED%84%B0%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8&amp;srcid=27103214&amp;map_type=TYPE_MAP&amp;from=roughmap"
-            target="_blank"><img class="map"
-              src="http://t1.daumcdn.net/roughmap/imgmap/af5e93f6d9a52288dae39b7cc795d5f8c13c1d556c95523bb1befcbfa0f10e53"
-              width="498px" height="298px" style="border:1px solid #ccc;"></a>
-        </div>
-        <div
-          style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
-          <div style="float: right; position: relative; top: 1px; font-size: 11px;"><a target="_blank"
-              href="https://map.kakao.com/?from=roughmap&amp;srcid=27103214&amp;confirmid=27103214&amp;q=%EC%84%B1%EB%82%A8%20%EA%B7%B8%EB%A6%B0%EC%BB%B4%ED%93%A8%ED%84%B0%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8&amp;rv=on"
-              style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">로드뷰</a><span
-              style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a
-              target="_blank"
-              href="https://map.kakao.com/?from=roughmap&amp;eName=%EC%84%B1%EB%82%A8%20%EA%B7%B8%EB%A6%B0%EC%BB%B4%ED%93%A8%ED%84%B0%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8&amp;eX=523700.0&amp;eY=1069570.0"
-              style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">길찾기</a><span
-              style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span><a
-              target="_blank"
-              href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=27103214&amp;itemId=27103214&amp;q=%EC%84%B1%EB%82%A8%20%EA%B7%B8%EB%A6%B0%EC%BB%B4%ED%93%A8%ED%84%B0%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8&amp;urlX=523700.0&amp;urlY=1069570.0"
-              style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">지도 크게
-              보기</a></div>
-        </div>
-      </div>
-    </div>
     </div>
   </main>
   <footer>
@@ -194,8 +170,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/FAQs&tabs.js"></script>
   <script src="js/nav.js"></script>
-  <script src="js/jquery-3.6.3.min.js"></script>
   <script src="https://kit.fontawesome.com/0f1871673a.js" crossorigin="anonymous"></script>
 </body>
 
