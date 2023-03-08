@@ -45,7 +45,7 @@
   animation-delay: 3s;
 } */
 
-/* #splash-screen {
+#splash-screen {
   background-color: black;
   position: fixed;
   height: 100vh;
@@ -63,4 +63,4 @@
   width: 500px;
   height: 500px;
   z-index: 100;
-} */
+}
