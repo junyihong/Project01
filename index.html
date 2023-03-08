@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WAGs</title>
     <link rel="stylesheet" href="css/style.css" />
-
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/chat-bot.js"></script>
   </head>
 
   <body id="index__body">
@@ -19,9 +20,7 @@
     <header>
       <div id="nav">
         <div id="nav__logo">
-          <video autoplay id="logo-mp4" muted height="110px" width="300px">
-            <source src="img/main_logo.mp4" type="video/mp4" />
-          </video>
+          <img src="img/main-logo.png" width="360px" height="90px" alt="">
         </div>
         <div id="nav__right">
           <ul class="nav__list">
@@ -30,6 +29,9 @@
             </li>
             <li>
               <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="community.html">Community</a>
             </li>
             <li>
               <a href="contact.html">Contact Us</a>
@@ -317,8 +319,51 @@
     <!-- <div id="splash-screen">
       <img id="splash-img" src="img/logo-splash.gif" />
     </div> -->
+
+    <!-- --chat-- -->
+    <div class="chat">
+      <button class="bot">
+        <i class="fa-solid fa-comment-dots"></i>
+      </button>
+      <div class="text__icon">
+        <div class="chat__top">
+          <img src="img/chat-logo.png" id="chat__top__img">
+          <p id="chat__top__p">
+            <span id="chat__top__name">WAGs</span><br>
+            <span id="chat__top__reply">We’ll reply as soon as we can.</span>
+          </p>
+          <button id="chat__top__btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="chat__middle">
+          <div id="chat__new">
+            <span>NEW MESSAGE</span>
+          </div>
+          <div class="chat__message">
+            <div class="mk2">
+              Hey there, please leave your details so we can contact you even if
+              you are no longer on the site.
+            </div>
+          </div>
+          <div class="chat__message1">
+            <br />
+            <input class="mk" type="text" placeholder="Name" /><br>
+            <br />
+            <input class="mk" type="email" placeholder="E-mail" />
+            <br />
+            <button class="submit_btn" value="">submit</button>
+          </div>
+        </div>
+        <div class="text__string">
+          <input class="tex" type="text" placeholder="Type your message" />
+          <i class="fa-regular fa-face-smile"></i>
+          <i class="fa-solid fa-paperclip"></i>
+        </div>
+      </div>
+    </div>
+    <!-- --chat-- -->
+
+
     <script src="js/nav.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="js/index-greeting.js"></script>
     <script src="js/main2.js"></script>
     <script src="js/main4.js"></script>
