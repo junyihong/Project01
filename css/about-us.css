@@ -72,15 +72,18 @@
 
  .introbox {
       display:flex;
-      justify-content: space-between;
+      justify-content:space-around;
       text-align: center;
+      white-space:nowrap;
+      padding-top: 30px;
       width: 100%;
-      height: 250px;
+      height: 280px;
       background-size: 100%;
       background-image: url("https://ak.picdn.net/shutterstock/videos/1020718915/thumb/1.jpg");
  }
  .introtext {
-      padding: 0px 180px 0px 180px;
+      min-width:360px;
+      /* padding: 0px 180px 0px 180px; */
       color: white;
  }
 .game_box {
