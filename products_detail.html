@@ -7,6 +7,7 @@
     <title>WAGs</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   </head>
   <script>
     $(document).ready(function () {
@@ -54,7 +55,26 @@
       });
     });
   </script>
-  <script></script>
+  <script>
+    $(document).ready(function () {
+      $("#img2__pid").hide();
+      $("#456").click(function () {
+        $("#img2__pid").show();
+        $("#img1__pid").hide();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#123").click(function () {
+        $("#img1__pid").show();
+        $("#img2__pid").hide();
+      });
+    });
+  </script>
+  <!-- <script>
+    var imgchange = document.querySelector("#img1__pid");
+  </script> -->
   <body>
     <header>
       <div id="nav">
@@ -104,7 +124,9 @@
             <a href="../Project01\index.html"> Home </a> >
             <a href="../Project01\products.html"> Product </a>
             > <span style="color: gray"> Gameflow Black </span>
-            <a class="page__move" href=""> Next -></a>
+            <a class="page__move" href="../Project01\products_detail2.html">
+              Next -></a
+            >
             <span class="page__move">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
             <span class="page__move1" href=""><- Prev</span>
             <!-- 다음 창부터는 Prev에 span태그 말고 a태그 
@@ -114,8 +136,11 @@
           <br />
           <div class="pd__img">
             <img
-              id="img1"
-              src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_625,h_469,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
+              id="img1__pid"
+              src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_500,h_375,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
+            /><img
+              id="img2__pid"
+              src="https://static.wixstatic.com/media/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.jpg/v1/fill/w_500,h_375,al_c,q_85,usm_0.66_1.00_0.01/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.webp"
               alt=""
             />
           </div>
@@ -138,7 +163,6 @@
             <div class="option__">Option :</div>
             <div>
               <select class="poi" name="" id="">
-                dfdsfsdf
                 <option value="" selected>Add more Option</option>
                 <option value="">add product +</option>
                 <option value="">more parts +</option>
@@ -157,17 +181,28 @@
           </div>
           <div class="zz">
             <img
-              id="img"
+              id="123"
               src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
-              onclick="toggleImg()"
             />
-
-            <script>
+            <img
+              id="456"
+              src="https://static.wixstatic.com/media/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.jpg/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.webp"
+            />
+            <!-- <script>
               function toggleImg() {
                 document.getElementById("img1").src =
+                  "https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_500,h_375,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp";
+                document.getElementById("img2").src =
                   "https://static.wixstatic.com/media/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.jpg/v1/fill/w_500,h_375,al_c,q_85,usm_0.66_1.00_0.01/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.webp";
               }
-            </script>
+            </script> -->
+            <!-- <script>
+              function toggleImg() {
+                document.getElementById("img2").src =
+                  "https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_625,h_469,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp";
+              }
+            </script> -->
+
             <!-- <img
               src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
               alt=""

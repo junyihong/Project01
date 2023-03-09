@@ -2,6 +2,15 @@
   padding: 0px;
   margin: 0px;
 }
+#img1__pid {
+  width: 120%;
+  height: 120%;
+}
+#img2__pid {
+  width: 120%;
+  height: 120%;
+}
+
 .page__move {
   float: right;
   font-size: 18px;
@@ -21,7 +30,7 @@
 }
 .pd__backgroundblack {
   background-color: black;
-  height: 1400px;
+  height: 1200px;
 }
 .s1 {
   color: white;
@@ -37,11 +46,11 @@
   height: 100%;
 }
 #buy__btn:hover {
-  background: linear-gradient(to bottom right, rgb(35, 9, 97), rgb(49, 16, 45));
-  color: black;
+  background: #8858ed;
+  color: white;
 }
 .box1 {
-  padding-left: 50px;
+  padding-left: 150px;
   color: white;
   float: left;
 }
@@ -53,13 +62,13 @@
 
 #buy__btn {
   text-align: center;
-  width: 400px;
+  width: 380px;
   height: 50px;
   font-family: bold;
-  background-color: #08070c;
-  color: #f8f0d1;
+  background-color: white;
+  color: #8858ed;
   border-radius: 30px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   border: 1px solid white;
 }
@@ -110,9 +119,10 @@ input[type="number"] {
 .detail__big {
   clear: both;
   color: white;
-  padding-top: 50px;
+  padding-top: 20px;
+
   float: left;
-  width: 625px;
+  width: 500px;
   font-size: 30px;
 }
 .detail__big > div {
@@ -122,8 +132,8 @@ input[type="number"] {
   font-size: 30px;
   color: white;
   float: right;
-  padding-top: 50px;
-  padding-left: 50px;
+  padding-top: 20px;
+  padding-left: 150px;
   float: left;
 }
 .detail__small > div {
