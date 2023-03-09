@@ -21,83 +21,93 @@
         type=" video/mp4">
     </video>
     <div class="sign-up-text">
-            <!-- 동영상 태그 끝 -->
-            <h2 class="sign-up-h2">회원가입</h2>
-            <div class="sign-up-container">
-                <div class="form">
-                    <!-- <h4 class="mb-3">회원가입</h4> -->
-                    <form id="joinForm">
-                        <div class="row">
-                            <div class="col-md-6 mb-2">
-                                <label for="name">이름</label>
-                                <input type="text" class="form-control" id="name" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    이름을 입력해주세요.
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-2">
-                                <label for="nickname">닉네임</label>
-                                <input type="text" class="form-control" id="nickname" placeholder="" value="" required>
-
+        <!-- 동영상 태그 끝 -->
+        <h2 class="sign-up-h2">회원가입</h2>
+        <div class="sign-up-container">
+            <div class="form">
+                <!-- <h4 class="mb-3">회원가입</h4> -->
+                <form id="joinForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <label for="name">이름</label>
+                            <input type="text" class="form-control" id="name" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                이름을 입력해주세요.
                             </div>
                         </div>
-
-                        <div class="mb-2">
-                            <label for="email">email</label>
-                            <input type="email" class="form-control" placeholder="you@example.com" required>
-
+                        <div class="col-md-6 mb-2">
+                            <label for="nickname">닉네임</label>
+                            <input type="text" class="form-control" id="nickname" placeholder="" value="" required>
                         </div>
-
-                        <div class="mb-2">
-                            <label for="address">우편번호</label>
-                            <input type="text" class="form-control" onclick="postCode" required>
-
-                        </div>
-
-                        <div class="mb-2">
-                            <label for="address">주소</label>
-                            <input type="text" class="form-control" value="" required>
-                        </div>
-
-
-                        <div class="mb-2">
-                            <label for="address2">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
-                            <input type="text" class="form-control" placeholder="상세주소를 입력해주세요." value="" />
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-8 mb-3">
-                                <label for="root">가입 경로</label>
-                                <select class="custom-select d-block w-100" id="root">
-                                    <option value=""></option>
-                                    <option>검색</option>
-                                    <option>카페</option>
-                                    <option>추천</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    가입 경로를 선택해주세요.
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-2">
-                                <label for="code">추천인 코드</label>
-                                <input type="text" class="form-control" id="code" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    추천인 코드를 입력해주세요.
-                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <label for="password">비밀번호</label>
+                            <input type="password" class="form-control" id="password" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                비밀번호를 입력해주세요.
                             </div>
                         </div>
-                        <hr class="mb-3">
-                        <div class="sign-up-custom-control custom-checkbox">
-                            <input type="checkbox" class="sign-up-custom-control-input" id="aggrement" required>
-                            <label class="sign-up-custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
+                        <div class="col-md-6 mb-2">
+                            <label for="password_check">비밀번호 확인</label>
+                            <input type="password" class="form-control" id="nickname" placeholder="" value="" required>
                         </div>
-                        <div class="mb-4">
-                            <button id="sign-btn" class="sign-up-custom-btn btn-8" type="submit"><span>가입완료</span></button>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <label for="name">생년월일</label>
+                            <input type="date" class="form-control" id="name" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                이름을 입력해주세요.
+                            </div>
                         </div>
-                    </form>
-                </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="gender">성별</label>
+                            <div class="gender">
+                                <div class="man"><input type="radio" name="gender">남</div>
+                                <div class="woman"><input type="radio" name="gender">여</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="">
+                            <label for="sign_up_phone">전화번호</label>
+                            <div class="sign_up_select"><select style="padding: 2px;" >
+                                <option>010</option>
+                                <option>011</option>
+                                <option>012</option></select>
+                            -&nbsp;<input type="text" class="sign_up_select"  placeholder="" value="" required>
+                            -&nbsp;<input type="text" class="sign_up_select"  placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                전화번호를 입력해주세요.
+                            </div>
+                            </div>
+                        </div>
+                    <div class="mb-2">
+                        <label for="address">주소</label>
+                        <input type="text" class="form-control" value="" required>
+                        <div class="invalid-feedback">
+                            이름을 입력해주세요.
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="address2">상세주소</label>
+                        <input type="text" class="form-control" placeholder="상세주소를 입력해주세요" value="" required>
+                    </div>
+                    <hr class="mb-3">
+                    <div class="sign-up-custom-control custom-checkbox">
+                        <input type="checkbox" class="sign-up-custom-control-input" id="aggrement" required>
+                        <label class="sign-up-custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
+                    </div>
+                    <div class="mb-4">
+                        <button id="sign-btn" class="sign-up-custom-btn btn-8" type="submit"><span>가입완료</span></button>
+                    </div>
+                </form>
             </div>
         </div>
-        <script src="js/sign-up.js"></script>
+    </div>
+    <script src="js/sign-up.js"></script>
 </body>
+
 </html>
