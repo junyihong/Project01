@@ -1,5 +1,5 @@
 const joinForm = document.querySelector("#joinForm");
-const joinBtn = document.querySelector("#sign-btn");
+const joinBtn = document.querySelector(".btn-8");
 const newWindowDiv = document.querySelector(".form");
 
 function congratulationJoin (event) {
@@ -11,9 +11,9 @@ function congratulationJoin (event) {
 let opc = 0;
 
 function animate() {
-    opc += 0.5;
+    opc += 0.05;
     newWindow.style.opacity = opc;
-    if(opc < 1) {
+    if(opc < 0.75) {
         requestAnimationFrame(animate);
     }
 }
@@ -41,4 +41,4 @@ function paintCongratulation() {
     animate();
 }
 
-joinBtn.addEventListener("click", congratulationJoin);
+joinBtn.addEventListener("submit", congratulationJoin);

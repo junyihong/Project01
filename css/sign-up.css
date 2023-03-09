@@ -306,3 +306,32 @@
 .newBtn span:hover:after {
     width: 100%;
 }
+
+.gender{
+    /*성별칸 위치조정*/
+    display: flex;
+}
+
+.man{
+    /*남자 라디오버튼 위치조정*/
+padding-top: 5px;
+}
+
+.woman{
+    /*여자 라디오버튼 위치조정*/
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.sign_up-select{
+    display: block;
+    border-radius: 15px;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    /* margin-top: 60px;
+    margin-bottom: -10px; */
+    padding: 32px;
+    border: 1px solid #7c7c7c;
+    background: #ffffff;
+}

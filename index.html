@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WAGs</title>
-    <link rel="stylesheet" href="css/style.css" />
 
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAGs</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/chat-bot.js"></script>
+  <script>
+    window.onload = function () {
+      const loader = document.querySelector('.loader--text');
+      const loadingText = document.querySelector('#loading-h1');
+      var i = 0;
+      var num = 0;
+      var loadingProgress = 10;
+      var dot = [".", "..", "..."];
+
+      loading = setInterval(() => {
+        if (loadingProgress < 80) {
+          loadingProgress += Math.floor(Math.random() * 15 + 6);
+          loader.innerText = `-  ${loadingProgress}%  -`
+        } else {
+          loadingProgress = 100;
+          loader.innerText = `-  100%  -`
+          clearInterval(loading);
+        }
+      }, 400);
+
+      makeDot = setInterval(() => {
+        num = num + 1;
+        i = num % 3;
+        console.log(i);
+        loadingText.innerText = `Loading${dot[i]}`;
+      }, 300)
+    }
+  </script>
+</head>
 
   <body id="index__body">
     <video autoplay loop id="video-background" poster="" muted>
       <source
-        src="https://www.desktophut.com/files/1659615046-1659615046-tala-nicole-valorant-animated-wallpaper.mp4"
+        src="img/valorant.mp4"
         type="video/mp4"
       />
     </video>
     <header>
       <div id="nav">
         <div id="nav__logo">
-          <video autoplay id="logo-mp4" muted height="110px" width="300px">
-            <source src="img/main_logo.mp4" type="video/mp4" />
-          </video>
+          <a href="index.html"><img src="img/main-logo.png" width="360px" height="90px" alt=""></a>
         </div>
         <div id="nav__right">
           <ul class="nav__list">
@@ -32,11 +60,14 @@
               <a href="products.html">Products</a>
             </li>
             <li>
+              <a href="community.html">Community</a>
+            </li>
+            <li>
               <a href="contact.html">Contact Us</a>
             </li>
           </ul>
           <ul id="nav__icon">
-            <input id="search-input" class="hidden" type="text" />
+            <input id="search-input" class="v-hidden" type="text" />
             <li id="toggle-vibility">
               <i class="fa-solid fa-magnifying-glass"></i>
             </li>
@@ -257,6 +288,8 @@
       </div>
     </main>
 
+
+    <!-- 푸터 -->
     <footer>
       <div id="foot__top">
         <div class="foot__upperbox">
@@ -307,24 +340,66 @@
       </div>
     </footer>
 
-    <!-- <video autoplay loop id="video-splash" poster="" muted>
-      <source
-        src="img/mylivewallpapers.com-Ashen-Knight-Pyke.mp4"
-        type="video/mp4"
-      />
-    </video> -->
-    
-    <!-- <div id="splash-screen">
+    <!-- 챗봇 -->
+    <div class="chat">
+      <button class="bot">
+        <i class="fa-solid fa-comment-dots"></i>
+      </button>
+      <div class="text__icon">
+        <div class="chat__top">
+          <img src="" id="chat__top__img">
+          <p id="chat__top__p">
+            <span id="chat__top__name">WAGs</span><br>
+            <span id="chat__top__reply">We’ll reply as soon as we can.</span>
+          </p>
+          <button id="chat__top__btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="chat__middle">
+          <div id="chat__new">
+            <span>NEW MESSAGE</span>
+          </div>
+          <div class="chat__message">
+            <div class="mk2">
+              Hey there, please leave your details so we can contact you even if
+              you are no longer on the site.
+            </div>
+          </div>
+          <div class="chat__message1">
+            <br />
+            <input class="mk" type="text" placeholder="Name" />
+            <br />
+            <input class="mk" type="email" placeholder="E-mail" />
+            <br />
+            <button class="submit_btn" value="">submit</button>
+          </div>
+        </div>
+        <div class="text__string">
+          <input class="tex" type="text" placeholder="Type your message" />
+          <i class="fa-regular fa-face-smile"></i>
+          <i class="fa-solid fa-paperclip"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- 스플래시 스크린 -->
+    <div id="splash-screen">
       <img id="splash-img" src="img/logo-splash.gif" />
-    </div> -->
+      <div id="splash-load">
+        <div id="splash-load-div"><h1 id="loading-h1">Loading </h1><i class="fa-solid fa-spinner"></i></div><br>
+        <span class='loader--text'>-  0%  -</span>
+      </div>
+    </div>
+    
+    <script src="js/chat-bot.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="js/index-greeting.js"></script>
     <script src="js/main2.js"></script>
     <script src="js/main4.js"></script>
-    <script src="js/nav.js"></script>
+    <script src="js/part5-1.js"></script>
+    <script src="js/part5-2.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/0f1871673a.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://kit.fontawesome.com/0f1871673a.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

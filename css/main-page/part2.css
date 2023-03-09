@@ -99,12 +99,19 @@
   color: white;
   font-size: 18px;
   background-color: #8858ed;
+  border: 1px solid #8858ed;
   padding: 10px 100px;
   font-family: "Montserrat";
   font-weight: 700;
   margin-top: 10px;
   border-radius: 25px;
   cursor: pointer;
+  transition: 0.5s ease-in-out all;
+}
+.best-btn:hover{
+  color: #8858ed;
+  background-color: white;
+  border: 1px solid #8858ed;
 }
 
 /* ----------------------------------------------------------------- */

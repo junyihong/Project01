@@ -16,6 +16,8 @@
 @import "main-page/part2.css";
 @import "main-page/part3.css";
 @import "main-page/part4.css";
+@import "main-page/part5-1.css";
+
 
 @import "about-us.css";
 @import "products.css";
@@ -23,6 +25,10 @@
 @import "contact-us.css";
 @import "login.css";
 @import "sign-up.css";
+@import "chat-bot.css";
+
+
+
 
 h1 {
   font-size: 50px;
@@ -37,7 +43,7 @@ main {
 
 /* 변수지정 */
 :root {
-  --point-color: rgb(186, 88, 237);
+  --point-color: rgb(136, 88, 237);
   --space: 8px 20px;
   --sub-color: rgb(50, 50, 50);
   --font-size: 24px;

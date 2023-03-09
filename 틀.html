@@ -4,54 +4,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WAGs</title>
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- 제이쿼리 스크립트 -->
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/chat-bot.js"></script>
+  <!-- 제이쿼리 스크립트 -->
+
 </head>
+
+
 <body>
+      <!-- 헤더  -->
   <header>
     <div id="nav">
       <div id="nav__logo">
-        <a href="index.html"
-          ><h1><i class="fa-brands fa-accusoft"></i> WAGs</h1></a
-        >
+        <a href="index.html"><img src="img/main-logo.png" width="360px" height="90px" alt=""></a>
       </div>
       <div id="nav__right">
         <ul class="nav__list">
           <li>
-            <a href="#">About Us</a>
+            <a href="about-us.html">About Us</a>
           </li>
           <li>
             <a href="products.html">Products</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="community.html">Community</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
           </li>
         </ul>
         <ul id="nav__icon">
-          <input id="search-input" class="hidden" type="text" />
+          <input id="search-input" class="v-hidden" type="text" />
           <li id="toggle-vibility">
             <i class="fa-solid fa-magnifying-glass"></i>
           </li>
-
-          <li>
-            <a href="login.html"><i class="fa-solid fa-user-tie"></i></a>
-          </li>
           <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
+          <li>
+            <a href="login.html"><i class="fa-solid fa-user-tie"></i><span id="greeting">Log-In</span></a>
+          </li>
         </ul>
       </div>
+      <div class="nav_padding"></div>
     </div>
+    <div id="lightoff" class="hidden"></div>
     <div id="cart">
       <div id="cart__top">
         <i class="fa-solid fa-angles-right"></i>
         <span>Cart</span>
-        <span class="padding">I</span>
+        <span class="padding">i</span>
       </div>
       <div id="cart__bottom">
         <span>Cart is empty</span>
       </div>
     </div>
   </header>
+      <!-- 헤더  -->
 
-  <main></main>
+  <main>
+    주석으로 표시해둔 부분 복붙해주세용
+  </main>
 
+    <!-- 푸터 -->
   <footer>
     <div id="foot__top">
       <div class="foot__upperbox">
@@ -101,11 +116,59 @@
       </div>
     </div>
   </footer>
+    <!-- 푸터 -->
 
-  <script src="js/nav.js"></script>
+    <!-- --chat-- -->
+    <div class="chat">
+      <button class="bot">
+        <i class="fa-solid fa-comment-dots"></i>
+      </button>
+      <div class="text__icon">
+        <div class="chat__top">
+          <img src="img/chat-logo.png" id="chat__top__img">
+          <p id="chat__top__p">
+            <span id="chat__top__name">WAGs</span><br>
+            <span id="chat__top__reply">We’ll reply as soon as we can.</span>
+          </p>
+          <button id="chat__top__btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="chat__middle">
+          <div id="chat__new">
+            <span>NEW MESSAGE</span>
+          </div>
+          <div class="chat__message">
+            <div class="mk2">
+              Hey there, please leave your details so we can contact you even if
+              you are no longer on the site.
+            </div>
+          </div>
+          <div class="chat__message1">
+            <br />
+            <input class="mk" type="text" placeholder="Name" /><br>
+            <br />
+            <input class="mk" type="email" placeholder="E-mail" />
+            <br />
+            <button class="submit_btn" value="">submit</button>
+          </div>
+        </div>
+        <div class="text__string">
+          <input class="tex" type="text" placeholder="Type your message" />
+          <i class="fa-regular fa-face-smile"></i>
+          <i class="fa-solid fa-paperclip"></i>
+        </div>
+      </div>
+    </div>
+    <!-- --chat-- -->
+
+    <!-- script문 -->
+    <script src="js/nav.js"></script>
+    <script src="js/index-greeting.js"></script>
   <script src="js/jquery-3.6.3.min.js"></script>
   <script
     src="https://kit.fontawesome.com/0f1871673a.js"
     crossorigin="anonymous"
   ></script>
+      <!-- script문 -->
+
+
 </body>

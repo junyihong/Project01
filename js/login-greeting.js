@@ -15,10 +15,3 @@ function paintGreeting(username){
 
 loginForm.addEventListener("submit", onLoginSubmit);
 
-const savedUsername = localStorage.getItem(USERNAME_KEY);
-
-if(savedUsername === null) {
-    loginForm.addEventListener("submit", onLoginSubmit);
-} else {
-    paintGreeting(savedUsername)
-}

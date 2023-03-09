@@ -9,27 +9,50 @@ const cartInnerBtn = document.querySelector("#cart__top i");
 const cartList = document.querySelector("#cart");
 const cartLightOff = document.querySelector("#lightoff");
 
-function showInput() {
-  searchInput.classList.toggle("hidden");
-  if (searchInput.className === "hidden") {
-    searchInput.style.width = "0px";
-    navList.style.transform = "translateX(0px)";
-  } else {
-    searchInput.style.width = "200px";
-    navList.style.transform = "translateX(-20px)";
-    document.querySelector("#nav__icon").style.Width = "495";
+// Set the starting width
+  let width = 0;
+function animate1() {
+  width += 5;
+  searchInput.style.width = width + "px";
+  if (width < 200) {
+    requestAnimationFrame(animate1);
   }
 }
+function animate2(){
+  width += -5;
+  searchInput.style.width = width + "px";
+  if (width > 0) {
+    requestAnimationFrame(animate2);
+  }
+  setTimeout(visibilityHidden,700);
+  function visibilityHidden(){
+    searchInput.style.visibility = 'hidden';
+  }
+}
+function showInput() {
+      searchInput.classList.toggle("v-hidden");
+      if (searchInput.className !== "v-hidden") {
+      searchInput.style.visibility = 'visible';
+      animate1();
+      } else {
+       animate2();
+      }
+    }
 function showCartList() {
   cartList.style.transform = "translateX(-300px)";
-  cartLightOff.classList.remove("hidden");
+  cartLightOff.classList.remove("v-hidden");
 }
+
 function hideCartList() {
   cartList.style.transform = "translateX(300px)";
-  cartLightOff.classList.add("hidden");
+  cartLightOff.classList.add("v-hidden");
   // cartList.style.transform = "translateX(-300px)";
 }
 
 toggleBtn.addEventListener("click", showInput);
 cartBtn.addEventListener("click", showCartList);
 cartInnerBtn.addEventListener("click", hideCartList);
+
+
+
+
