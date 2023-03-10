@@ -149,3 +149,7 @@
 .padding {
   visibility: hidden;
 }
+.lightoff-hidden{ 
+  opacity: 0.5;
+  display: none;
+}

@@ -1,21 +1,15 @@
-#fourth-background {
-  display: flex;
-  background:url('/img/fog.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 750px;
-  justify-content: center;
-  overflow: hidden;
-  transition: 0.4s cubic-bezier(0, 0, 0, 1) all;
-}
 #main__fourth {
   display: flex;
-  background-image: url('/img/fog.jpg');
+  background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701927478.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
   width: 100%;
   height: 750px;
   justify-content: center;
   overflow: hidden;
+  transition: 0.1s ease-in-out;
+
 }
 #main__fourth img {
   border-radius: 20px;

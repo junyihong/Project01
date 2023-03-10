@@ -40,12 +40,12 @@ function showInput() {
     }
 function showCartList() {
   cartList.style.transform = "translateX(-300px)";
-  cartLightOff.classList.remove("v-hidden");
+  cartLightOff.classList.remove("lightoff-hidden");
 }
 
 function hideCartList() {
   cartList.style.transform = "translateX(300px)";
-  cartLightOff.classList.add("v-hidden");
+  cartLightOff.classList.add("lightoff-hidden");
   // cartList.style.transform = "translateX(-300px)";
 }
 

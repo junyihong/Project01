@@ -32,20 +32,17 @@
       makeDot = setInterval(() => {
         num = num + 1;
         i = num % 3;
-        console.log(i);
+        // console.log(i);
         loadingText.innerText = `Loading${dot[i]}`;
       }, 300)
+
+      // setTimeout(clearInterval(makeDot), 10000);
+      // setTimeout(clearInterval(loading),10000);
     }
   </script>
 </head>
 
   <body id="index__body">
-    <video autoplay loop id="video-background" poster="" muted>
-      <source
-        src="img/valorant.mp4"
-        type="video/mp4"
-      />
-    </video>
     <header>
       <div id="nav">
         <div id="nav__logo">
@@ -79,7 +76,7 @@
         </div>
         <div class="nav_padding"></div>
       </div>
-      <div id="lightoff" class="hidden"></div>
+      <div id="lightoff" class="lightoff-hidden"></div>
       <div id="cart">
         <div id="cart__top">
           <i class="fa-solid fa-angles-right"></i>
@@ -91,9 +88,17 @@
         </div>
       </div>
     </header>
-    <a href="products.html"></a>
+
+
     <main id="index__main">
+
       <div id="main__first">
+        <video autoplay loop id="video-background" poster="" muted>
+          <source
+            src="img/valorant.mp4"
+            type="video/mp4"
+          />
+        </video>
         <div id="main__first__div">
           <p id="main__first__p">
             Power up your Game <br />
@@ -114,6 +119,7 @@
           <img src="./img/Cyber-copy.webp" alt="" />
         </div>
       </div>
+
       <div id="main__second">
         <div class="main__title__box" id="main2__title">
           <span class="main__title">BEST SELLERS</span>
@@ -238,6 +244,7 @@
           </div>
         </div>
       </div>
+
       <div id="main__third">
         <div class="main__title__box">
           <span class="main__title">SHOP BY CATEGORY</span>
@@ -263,6 +270,7 @@
           </div>
         </div>
       </div>
+
       <div id="main__fourth">
         <div id="fourth__box1">
           <p>
@@ -286,6 +294,7 @@
           </div>
         </div>
       </div>
+      
     </main>
 
 
@@ -347,7 +356,7 @@
       </button>
       <div class="text__icon">
         <div class="chat__top">
-          <img src="" id="chat__top__img">
+          <img src="img/chat-logo.png" id="chat__top__img">
           <p id="chat__top__p">
             <span id="chat__top__name">WAGs</span><br>
             <span id="chat__top__reply">We’ll reply as soon as we can.</span>
@@ -396,8 +405,6 @@
     <script src="js/index-greeting.js"></script>
     <script src="js/main2.js"></script>
     <script src="js/main4.js"></script>
-    <script src="js/part5-1.js"></script>
-    <script src="js/part5-2.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="https://kit.fontawesome.com/0f1871673a.js" crossorigin="anonymous"></script>
 </body>
