@@ -4,12 +4,8 @@ const toggleBtn = document.querySelector("#toggle-vibility");
 const navList = document.querySelector(".nav__list");
 
 // cart 관련
-const cartBtn = document.querySelector("#cart-btn");
-const cartInnerBtn = document.querySelector("#cart__top i");
-const cartList = document.querySelector("#cart");
-const cartLightOff = document.querySelector("#lightoff");
 
-// Set the starting width
+
   let width = 0;
 function animate1() {
   width += 5;
@@ -38,20 +34,10 @@ function showInput() {
        animate2();
       }
     }
-function showCartList() {
-  cartList.style.transform = "translateX(-300px)";
-  cartLightOff.classList.remove("lightoff-hidden");
-}
 
-function hideCartList() {
-  cartList.style.transform = "translateX(300px)";
-  cartLightOff.classList.add("lightoff-hidden");
-  // cartList.style.transform = "translateX(-300px)";
-}
+
 
 toggleBtn.addEventListener("click", showInput);
-cartBtn.addEventListener("click", showCartList);
-cartInnerBtn.addEventListener("click", hideCartList);
 
 
 

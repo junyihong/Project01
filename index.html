@@ -36,10 +36,9 @@
         loadingText.innerText = `Loading${dot[i]}`;
       }, 300)
 
-      // setTimeout(clearInterval(makeDot), 10000);
-      // setTimeout(clearInterval(loading),10000);
     }
   </script>
+
 </head>
 
   <body id="index__body">
@@ -84,7 +83,8 @@
           <span class="padding">i</span>
         </div>
         <div id="cart__bottom">
-          <span>Cart is empty</span>
+          <span id="cart__empty">Cart is empty</span>
+          <ul id="cart__list"></ul>
         </div>
       </div>
     </header>
@@ -124,7 +124,7 @@
         <div class="main__title__box" id="main2__title">
           <span class="main__title">BEST SELLERS</span>
           <a href="products.html"
-            ><button class="go-to-products-btn2" type="submit">
+            ><button class="go-to-products-btn2 " type="submit">
               View All
             </button></a
           >
@@ -134,26 +134,27 @@
             <i class="fa-solid fa-circle-chevron-left"></i>
           </div>
           <div id="slide__wrapper">
+            <!-- <form action="" id="cart__form"> -->
             <ul class="slides">
               <li>
                 <div class="best-img-box">
-                  <img src="./img/best1.webp" alt="" />
+                  <img id="best1" src="./img/best1.webp" alt="" />
                 </div>
                 <p>
                   Wave Gen RX <br />
                   <span class="best-price">$579.99</span>
                 </p>
-                <button class="best-btn">Add to Cart</button>
+                <button class="best-btn" onclick="handleCartSubmit('./img/best1.webp', 'Wave Gen RX')" id="best-btn1" >Add to Cart</button>
               </li>
               <li>
                 <div class="best-img-box">
-                  <img src="./img/best2.webp" alt="" />
+                  <img id="best2" src="./img/best2.webp" alt="" />
                 </div>
                 <p>
                   X-2 Wireless Mouse <br />
                   <span class="best-price">$24.99</span>
                 </p>
-                <button class="best-btn">Add to Cart</button>
+                <button class="best-btn" onclick="handleCartSubmit('./img/best2.webp', 'X-2 Wireless Mouse')" id="best-btn2" >Add to Cart</button>
               </li>
               <li>
                 <div class="best-img-box">
@@ -163,17 +164,17 @@
                   Ancient Souls <br />
                   <span class="best-price">$39.99</span>
                 </p>
-                <button class="best-btn">Add to Cart</button>
+                <button class="best-btn" onclick="handleCartSubmit('./img/ancient_souls.webp', 'Ancient Souls')" id="best-btn3">Add to Cart</button>
               </li>
               <li>
                 <div class="best-img-box">
                   <img src="./img/Chronosplit.webp" alt="" />
                 </div>
                 <p>
-                  Chronosplit <br />
+                   <br />
                   <span class="best-price">$39.99</span>
                 </p>
-                <button class="best-btn">Add to Cart</button>
+                <button class="best-btn" onclick="handleCartSubmit('./img/Chronosplit.webp', 'Chronosplit')" id="best-btn4">Add to Cart</button>
               </li>
               <li>
                 <div class="best-img-box">
@@ -183,7 +184,7 @@
                   Playbox XZ Gold Edition<br />
                   <span class="best-price">$1,000.00</span>
                 </p>
-                <button class="best-btn">Add to Cart</button>
+                <button class="best-btn" onclick="handleCartSubmit('./img/Playbox_XZ_Gold_Edition.webp' ,'Playbox XZ Gold Edition')" id="best-btn5">Add to Cart</button>
               </li>
               <li>
                 <div class="best-img-box">
@@ -193,7 +194,7 @@
                   Raptor <br />
                   <span class="best-price"><del>$29.99</del>&nbsp; $26.99</span>
                 </p>
-                <button class="best-btn">Add to Cart</button>
+                <button class="best-btn" onclick="handleCartSubmit('./img/Raptor.webp','Raptor')" id="best-btn6">Add to Cart</button>
               </li>
               <li>
                 <div class="best-img-box">
@@ -203,7 +204,7 @@
                   Echo_Headset<br />
                   <span class="best-price">$39.99</span>
                 </p>
-                <button class="best-btn">Add to Cart</button>
+                <button class="best-btn" onclick="handleCartSubmit('./img/Echo_Headset.webp', 'Echo_Headset')" id="best-btn7">Add to Cart</button>
               </li>
               <li>
                 <div class="best-img-box">
@@ -213,7 +214,7 @@
                   Wave<br />
                   <span class="best-price">$29.99</span>
                 </p>
-                <button class="best-btn">Add to Cart</button>
+                <button class="best-btn" onclick="handleCartSubmit('./img/Wave.webp' ,'Wave')" id="best-btn8">Add to Cart</button>
               </li>
               <li>
                 <div class="best-img-box">
@@ -223,7 +224,7 @@
                   Spartan Mechanical Keyboard<br />
                   <span class="best-price"><del>$44.99</del>&nbsp; $40.49</span>
                 </p>
-                <button class="best-btn">Add to Cart</button>
+                <button class="best-btn" onclick="handleCartSubmit('./img/Spartan_Mechanical_Keyboard.webp' ,'Spartan Mechanical Keyboard')" id="best-btn9">Add to Cart</button>
               </li>
               <li>
                 <div class="best-img-box">
@@ -235,9 +236,10 @@
                     ><del>$129.99</del>&nbsp; $116.99</span
                   >
                 </p>
-                <button class="best-btn">Add to Cart</button>
+                <button class="best-btn" onclick="handleCartSubmit('./img/Mach_Gaming_Chair.webp', 'Mach Gaming Chair')" id="best-btn10">Add to Cart</button>
               </li>
             </ul>
+          <!-- </form> -->
           </div>
           <div class="next">
             <i class="fa-solid fa-circle-chevron-right"></i>
@@ -294,7 +296,7 @@
           </div>
         </div>
       </div>
-      
+
     </main>
 
 
@@ -398,7 +400,9 @@
         <span class='loader--text'>-  0%  -</span>
       </div>
     </div>
-    
+
+    <script src="js/cart.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/chat-bot.js"></script>
     <script src="js/nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
