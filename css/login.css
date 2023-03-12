@@ -54,7 +54,7 @@
   content: "or connect with";
   position: absolute;
   top: -13px;
-  left: 33%;
+  left: 40%;
   background-color: #fff;
   padding: 0px 8px
 }
@@ -230,7 +230,7 @@
   margin-bottom: 10px;
   border-radius: 15px;
   width: 40vw;
-  height: 60vh;
+  height: 50vh;
   border: 1px solid #7c7c7c;
   background: #ffffff;
   opacity: 0.8;
