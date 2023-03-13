@@ -15,51 +15,61 @@
 
 <body>
       <!-- 헤더  -->
-  <header>
-    <div id="nav">
-      <div id="nav__logo">
-        <a href="index.html"><img src="img/main-logo.png" width="360px" height="90px" alt=""></a>
-      </div>
-      <div id="nav__right">
-        <ul class="nav__list">
-          <li>
-            <a href="about-us.html">About Us</a>
-          </li>
-          <li>
-            <a href="products.html">Products</a>
-          </li>
-          <li>
-            <a href="community.html">Community</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-        <ul id="nav__icon">
-          <input id="search-input" class="v-hidden" type="text" />
-          <li id="toggle-vibility">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </li>
-          <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
-          <li>
-            <a href="login.html"><i class="fa-solid fa-user-tie"></i><span id="greeting">Log-In</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav_padding"></div>
-    </div>
-    <div id="lightoff" class="hidden"></div>
-    <div id="cart">
-      <div id="cart__top">
-        <i class="fa-solid fa-angles-right"></i>
-        <span>Cart</span>
-        <span class="padding">i</span>
-      </div>
-      <div id="cart__bottom">
-        <span>Cart is empty</span>
-      </div>
-    </div>
-  </header>
+      <header>
+        <div id="nav">
+          <div id="nav__logo">
+            <a href="index.html"><img src="img/main-logo.png" width="360px" height="90px" alt=""></a>
+          </div>
+          <div id="nav__right">
+            <ul class="nav__list">
+              <li>
+                <a href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="products.html">Products</a>
+              </li>
+              <li>
+                <a href="community.html">Community</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul id="nav__icon">
+              <input id="search-input" class="v-hidden" type="text" />
+              <li id="toggle-vibility">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+              <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
+              <li>
+                <a href="login.html"><i class="fa-solid fa-user-tie"></i><span id="greeting">Log-In</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav_padding"></div>
+        </div>
+        <div id="lightoff" class="lightoff-hidden" onclick="lightOn()"></div>
+        <div id="cart">
+          <div id="cart__top">
+            <i class="fa-solid fa-angles-right"></i>
+            <span>Cart</span>
+            <span class="padding">i</span>
+          </div>
+          <div id="cart__container">
+            <span id="cart__empty">Cart is empty</span>
+            <ul id="cart__list"></ul>
+          </div>
+          <div id="cart__bottom">
+            <div id="cart__calculator">
+              <span id="cart__sum1">Total :</span>
+              <span id="cart__sum2">0.00</span>
+            </div>
+            <div id="cart__bottom__btndiv">
+              <a href="cart.html"><button id="cart__viewCart" >View Cart</button></a>
+            </div>
+          </div>
+        </div>
+      </header>
       <!-- 헤더  -->
 
   <main>
