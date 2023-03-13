@@ -7,6 +7,6 @@ window.onscroll = function(){
         'background-position-y' : 200 - (scroll * 100/ heightDocument) + '%',
     });
     $('#video-background').css({
-        'top' : 50 - (scroll * 100 / heightDocument) + '%',
+        'top' : 60 + (scroll / 200 ) +'%'
     })
 };
