@@ -4,7 +4,7 @@ window.onscroll = function(){
         heightDocument      = (windowHeight) + ($('#main__fourth').height()) + ($('footer').height());
         console.log(scroll);
     $('#main__fourth').css({
-        'background-position-y' : 130 - (scroll * 100/ heightDocument) + '%',
+        'background-position-y' : 150 - (scroll * 100/ heightDocument) + '%',
     });
     $('#video-background').css({
         'top' : 50 - (scroll * 100 / heightDocument) + '%',
