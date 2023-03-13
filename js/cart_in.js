@@ -15,7 +15,7 @@
 //     result.textContent = i;
 //     let totalcostNum = i * 990000;
 //     totalcost.textContent = "₩" + totalcostNum.toLocaleString();
-//   } else {
+//   } else {dfdf
 //     totalcost.textContent = "₩" + 0;
 //   }
 // });

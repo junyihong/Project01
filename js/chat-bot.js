@@ -17,3 +17,4 @@ $(document).ready(function () {
     $(".text__icon__pidAlone").slideUp();
   });
 });
+//dfd
