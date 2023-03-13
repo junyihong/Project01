@@ -15,8 +15,8 @@
   border: none;
 }
 .text__icon {
-  right: 70px;
-  bottom: 140px;
+  right: 20px;
+  bottom: 20px;
   width: 340px;
   height: 590px;
   background-color: rgb(18, 17, 18);
@@ -26,7 +26,19 @@
   color: white;
   overflow: hidden;
 }
-.chat__top{
+.text__icon__pidAlone {
+  right: 15px;
+  bottom: 15px;
+  width: 340px;
+  height: 590px;
+  background-color: rgb(18, 17, 18);
+  position: fixed;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  overflow: hidden;
+}
+.chat__top {
   position: relative;
   display: flex;
   justify-content: center;
@@ -38,27 +50,27 @@
   background-color: black;
   border-radius: 5px 5px 0px 0px;
 }
-#chat__top__img{
+#chat__top__img {
   width: 70px;
   height: 70px;
   padding-left: 10px;
 }
-#chat__top__p{
+#chat__top__p {
   width: 230px;
   margin: 0;
   padding: 10px;
   line-height: 180%;
 }
 #chat__top__name {
-font-size: 20px;
-font-family: 'Montserrat';
+  font-size: 20px;
+  font-family: "Montserrat";
 }
-#chat__top__reply{
-font-size: 14px;
-white-space: nowrap;
-word-spacing: 2px;
+#chat__top__reply {
+  font-size: 14px;
+  white-space: nowrap;
+  word-spacing: 2px;
 }
-#chat__top__btn{
+#chat__top__btn {
   font-size: 20px;
   cursor: pointer;
   padding-right: 15px;
@@ -66,14 +78,14 @@ word-spacing: 2px;
   background-color: transparent;
   border: none;
 }
-#chat__new{
+#chat__new {
   position: relative;
   top: 25px;
   text-align: center;
   background-color: rgba(97, 93, 93, 0.7);
   padding: 4px 0 6px;
 }
-#chat__new span{
+#chat__new span {
   color: black;
   display: inline-block;
   font-size: 10px;
@@ -82,7 +94,7 @@ word-spacing: 2px;
   background-color: rgb(182, 178, 178);
   border-radius: 15px;
 }
-#chat__middle{
+#chat__middle {
   display: flex;
   height: 455px;
   flex-direction: column;
@@ -96,20 +108,19 @@ word-spacing: 2px;
   width: 225px;
   height: 120px;
   border: 1px solid rgb(207, 207, 207);
-  background-color: rgb(77,77,77);
+  background-color: rgb(77, 77, 77);
   border-radius: 3px 18px 18px 3px;
   font-size: 14px;
   line-height: 170%;
   word-spacing: 4px;
 }
 
-
 .chat__message1 {
   margin: 0 0 20px 20px;
   width: 225px;
   height: 190px;
   padding: 0 10px;
-  background-color: rgb(77,77,77);
+  background-color: rgb(77, 77, 77);
   border: 1px solid rgb(207, 207, 207);
   border-radius: 3px 18px 18px 3px;
   font-size: 15px;
@@ -125,10 +136,10 @@ word-spacing: 2px;
   margin-left: 15px;
   transition: 0.5s ease-in-out;
 }
-.mk::placeholder{
+.mk::placeholder {
   color: white;
 }
-.mk:focus{
+.mk:focus {
   border-bottom: 2px solid white;
 }
 .submit_btn {
@@ -144,12 +155,11 @@ word-spacing: 2px;
   font-weight: 700;
   transition: 0.5s ease-in-out;
 }
-.submit_btn:hover{
+.submit_btn:hover {
   color: white;
   font-weight: 700;
   background-color: rgb(136, 88, 237);
   border: 2px solid white;
-
 }
 .text__string {
   width: 340px;
@@ -164,7 +174,7 @@ word-spacing: 2px;
   border: none;
   width: 240px;
   font-size: 14px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 .text__string i {
   position: relative;
@@ -172,6 +182,6 @@ word-spacing: 2px;
   left: 0;
   margin-right: 10px;
 }
-input:focus{
+input:focus {
   outline: none;
 }

@@ -7,74 +7,9 @@
     <title>WAGs</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> -->
   </head>
-  <script>
-    $(document).ready(function () {
-      $(".view__down__first").hide();
-      $("button.view__btn__first").click(function () {
-        $("div.view__down__first").slideToggle();
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".view__down__second").hide();
-      $("button.view__btn__second").click(function () {
-        $("div.view__down__second").slideToggle();
-        $("div.view__down__second-1").slideUp(400);
-        $("div.view__down__second-2").slideUp(400);
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".view__down__second-1").hide();
-      $("button.view__btn__second-1").click(function () {
-        $("div.view__down__second-1").slideToggle();
-        $("div.view__down__second").slideUp(400);
-        $("div.view__down__second-2").slideUp(400);
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".view__down__second-2").hide();
-      $("button.view__btn__second-2").click(function () {
-        $("div.view__down__second-2").slideToggle();
-        $("div.view__down__second").slideUp(400);
-        $("div.view__down__second-1").slideUp(400);
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".text__icon").hide();
-      $("button.bot").click(function () {
-        $(".text__icon").slideToggle(600);
-      });
-    });
-  </script>
-  <!-- <script>
-    $(document).ready(function () {
-      $("#img2__pid").hide();
-      $("#456").click(function () {
-        $("#img2__pid").show();
-        $("#img1__pid").hide();
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $("#123").click(function () {
-        $("#img1__pid").show();
-        $("#img2__pid").hide();
-      });
-    });
-  </script>
-  <script>
-    var imgchange = document.querySelector("#img1__pid");
-  </script> -->
+
   <body>
     <header>
       <div id="nav">
@@ -178,39 +113,7 @@
 
             <br />
           </div>
-          <!-- <div class="zz">
-            <img
-              id="123"
-              src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
-            />
-            <img
-              id="456"
-              src="https://static.wixstatic.com/media/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.jpg/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.webp"
-            />
-            <script>
-              function toggleImg() {
-                document.getElementById("img1").src =
-                  "https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_500,h_375,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp";
-                document.getElementById("img2").src =
-                  "https://static.wixstatic.com/media/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.jpg/v1/fill/w_500,h_375,al_c,q_85,usm_0.66_1.00_0.01/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.webp";
-              }
-            </script>
-            <script>
-              function toggleImg() {
-                document.getElementById("img2").src =
-                  "https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_625,h_469,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp";
-              }
-            </script>
 
-            <img
-              src="https://static.wixstatic.com/media/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.jpg/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01/c837a6_235d9b7973a240feabdd9097b36d88b3~mv2.webp"
-              alt=""
-            />
-            <img
-              src="https://static.wixstatic.com/media/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.jpg/v1/fill/w_45,h_45,al_c,q_85,usm_0.66_1.00_0.01/84770f_4e8f186c43614c62a8eb326e0bade4d2~mv2.webp"
-              alt=""
-            />
-          </div> -->
           <div class="detail__big">
             Product Info
             <button class="view__btn__first">view more info +</button>
@@ -260,41 +163,46 @@
               </div>
             </div>
           </div>
-          <div class="chat">
-            <button class="bot">
-              <img class="chat__img" src="" alt="" />
+        </div>
+      </div>
+      <div class="chat">
+        <button class="bot">
+          <i class="fa-solid fa-comment-dots"></i>
+        </button>
+        <div class="text__icon">
+          <div class="chat__top">
+            <img src="" id="chat__top__img" />
+            <p id="chat__top__p">
+              <span id="chat__top__name">WAGs</span><br />
+              <span id="chat__top__reply">We’ll reply as soon as we can.</span>
+            </p>
+            <button id="chat__top__btn">
+              <i class="fa-solid fa-xmark"></i>
             </button>
-            <div class="text__icon">
-              <div class="chat__log1">User Info</div>
-              <div class="chat__log2">profile</div>
-              <div class="chat__message">
-                <div class="mk2">
-                  Hey there, please leave your details so we can contact you
-                  even if you are no longer on the site.
-                </div>
-              </div>
-              <div class="chat__message1">
-                <br />
-                <input class="mk" type="text" placeholder="name" /> <br />
-                <br />
-                <input class="mk" type="email" placeholder="email" />
-                <br />
-                <button class="submit_btn" value="submit">
-                  <a href="#">submit</a>
-                </button>
-              </div>
-              <br />
-              <div class="text">
-                <input
-                  class="tex"
-                  type="text"
-                  placeholder="    type your message"
-                />
-                <button class="tex__sub" type="submit">
-                  <a href="">Click</a>
-                </button>
+          </div>
+          <div id="chat__middle">
+            <div id="chat__new">
+              <span>NEW MESSAGE</span>
+            </div>
+            <div class="chat__message">
+              <div class="mk2">
+                Hey there, please leave your details so we can contact you even
+                if you are no longer on the site.
               </div>
             </div>
+            <div class="chat__message1">
+              <br />
+              <input class="mk" type="text" placeholder="Name" />
+              <br />
+              <input class="mk" type="email" placeholder="E-mail" />
+              <br />
+              <button class="submit_btn" value="">submit</button>
+            </div>
+          </div>
+          <div class="text__string">
+            <input class="tex" type="text" placeholder="Type your message" />
+            <i class="fa-regular fa-face-smile"></i>
+            <i class="fa-solid fa-paperclip"></i>
           </div>
         </div>
       </div>
@@ -349,6 +257,8 @@
       </div>
     </footer>
     <script src="js/nav.js"></script>
+    <script src="js/products_detail.js"></script>
+    <script src="js/chat-bot.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
     <script
       src="https://kit.fontawesome.com/0f1871673a.js"
