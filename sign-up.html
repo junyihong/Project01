@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- 부트스트랩  -->
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet'>
-    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 </head>
 
@@ -65,25 +63,50 @@
                         <div class="col-md-6 mb-2">
                             <label for="gender">성별</label>
                             <div class="gender">
-                                <div class="man"><input type="radio" name="gender">남</div>
-                                <div class="woman"><input type="radio" name="gender">여</div>
+                                <div class="man"><input type="radio" name="gender">&nbsp;남</div>
+                                <div class="woman"><input type="radio" name="gender">&nbsp;여</div>
                             </div>
                         </div>
                     </div>
                     
-                        <div class="">
-                            <label for="sign_up_phone">전화번호</label>
-                            <div class="sign_up_select"><select style="padding: 2px;" >
+
+
+                            <div class="row">
+                            
+                            <div class="col-md-3 mb-3">
+                              <label for="root">전화번호</label>
+                              <select class="form-control " id="root">
+                                <option value=""></option>
                                 <option>010</option>
                                 <option>011</option>
-                                <option>012</option></select>
-                            -&nbsp;<input type="text" class="sign_up_select"  placeholder="" value="" required>
-                            -&nbsp;<input type="text" class="sign_up_select"  placeholder="" value="" required>
-                            <div class="invalid-feedback">
+                                <option>012</option>
+
+                              </select>
+                              <div class="invalid-feedback">
+                               전화번호를 입력해주세요.
+                              </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <label for="code"></label>
+                              <input type="text" class="form-control" id="code" placeholder="" required style="
+                              margin-top: 8px";>
+                              <div class="invalid-feedback">
                                 전화번호를 입력해주세요.
                             </div>
+                              </div>
+                            
+                              <div class="col-md-3 mb-3">
+                                <label for="code"></label>
+                                <input type="text" class="form-control" id="code" placeholder="" required style="
+                                margin-top: 8px">
+                                <div class="invalid-feedback">
+                                전화번호를 입력해주세요.
+                                </div>
+
                             </div>
-                        </div>
+                          </div>
+
+                            
                     <div class="mb-2">
                         <label for="address">주소</label>
                         <input type="text" class="form-control" value="" required>
@@ -106,6 +129,8 @@
                 </form>
             </div>
         </div>
+    </div>
+
     </div>
     <script src="js/sign-up.js"></script>
 </body>
