@@ -80,7 +80,7 @@
       /* 구간별 불투명도 설정 이미지 자연스럽게 넘기는 효과 */
 }
 .game_text {
-      display: flex;
+      display: flex; 
       flex-direction: column;
       justify-content: center;
       text-align: center;
@@ -95,13 +95,14 @@
       border-image: linear-gradient(var(--angle),#5f034c, #9198e5) 1;
       border-image-slice: 1;
       animation: 3s rotate linear infinite;
+      /* 텍스트 board라인 그라데이션 무한반복 */
 }
 @keyframes rotate {
       to {
-            --angle: 360deg;
+            --angle: 0deg;
       }
       from {
-            --angle: 0deg;
+            --angle: 360deg;
       }
 }
 @property --angle {
