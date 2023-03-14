@@ -33,13 +33,13 @@ html {
   font-family: 'Montserrat';
   font-weight: 700;
   border-radius: 25px;
-  transition: 0.3s linear;
   border: 2px solid rgb(136, 88, 237);
   cursor: pointer;
 }
 
 .products_button:hover {
   /*Add to Cart에 마우스 포인터를 올렸을 시 행동*/
+  transition: 0.3s linear;
   background-color: white;
   color: rgb(136, 88, 237);
 }
