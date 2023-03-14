@@ -9,6 +9,5 @@ function onLoginSubmit(event) {
     paintGreeting(username);
 }
 
-
 loginForm.addEventListener("submit", onLoginSubmit);
 
