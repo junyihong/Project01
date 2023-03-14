@@ -7,10 +7,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet&family=IBM+Plex+Sans+KR&family=Montserrat:wght@700;800&family=Noto+Serif+KR&display=swap');
 /* 브라우저의 default 스타일 값 초기화 */
 @import "reset.css";
+
 /* --------------------------------------- */
+
+/* 공통 Components */
 @import "nav&foot/nav-bar.css";
 @import "nav&foot/footer.css";
+@import "chat-bot.css";
 
+/* index */
 @import "main-page/index.css";
 @import "main-page/part1.css";
 @import "main-page/part2.css";
@@ -19,16 +24,13 @@
 @import "main-page/part5.css";
 @import "main-page/part6.css";
 
-
+/* 각 페이지 */
 @import "about-us.css";
 @import "products.css";
 @import "products_detail.css";
 @import "contact-us.css";
 @import "login.css";
 @import "sign-up.css";
-@import "chat-bot.css";
-
-
 
 
 h1 {
@@ -36,11 +38,9 @@ h1 {
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
-
 main {
   margin-top: 120px;
 }
-
 
 /* 변수지정 */
 :root {

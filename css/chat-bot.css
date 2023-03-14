@@ -15,14 +15,14 @@
   border: none;
 }
 .text__icon {
-  right: 70px;
-  bottom: 140px;
+  right: 20px;
+  bottom: 20px;
   width: 340px;
   height: 590px;
   background-color: rgb(18, 17, 18);
   position: fixed;
   border: 2px solid white;
-  border-radius: 25px;
+  border-radius: 30px;
   color: white;
   overflow: hidden;
 }
@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 340px;
+  width: 326px;
   height: 70px;
   padding: 5px 10px;
   padding-left: 0;
@@ -39,14 +39,13 @@
   border-radius: 5px 5px 0px 0px;
 }
 #chat__top__img{
-  width: 70px;
-  height: 70px;
-  padding-left: 10px;
+  width: 100px;
+  height: 80px;
 }
 #chat__top__p{
   width: 230px;
   margin: 0;
-  padding: 10px;
+  padding: 0 10px;
   line-height: 180%;
 }
 #chat__top__name {
@@ -55,20 +54,19 @@ font-family: 'Montserrat';
 }
 #chat__top__reply{
 font-size: 14px;
-white-space: nowrap;
-word-spacing: 2px;
 }
 #chat__top__btn{
+  padding: 8px;
   font-size: 20px;
   cursor: pointer;
-  padding-right: 15px;
   color: white;
+  width: 25px;
   background-color: transparent;
   border: none;
 }
 #chat__new{
   position: relative;
-  top: 25px;
+  top: 10px;
   text-align: center;
   background-color: rgba(97, 93, 93, 0.7);
   padding: 4px 0 6px;
@@ -76,7 +74,7 @@ word-spacing: 2px;
 #chat__new span{
   color: black;
   display: inline-block;
-  font-size: 10px;
+  font-size: 12px;
   /* border: 1px solid white; */
   padding: 3px 15px;
   background-color: rgb(182, 178, 178);
@@ -84,23 +82,22 @@ word-spacing: 2px;
 }
 #chat__middle{
   display: flex;
-  height: 455px;
+  height: 460px;
   flex-direction: column;
 }
 .chat__message {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 55px 0 20px 20px;
+  margin: 50px 0 20px 20px;
   padding: 0 10px;
   width: 225px;
-  height: 120px;
-  border: 1px solid rgb(207, 207, 207);
+  height: 110px;
+  border: 1px solid gray;
   background-color: rgb(77,77,77);
   border-radius: 3px 18px 18px 3px;
   font-size: 14px;
   line-height: 170%;
-  word-spacing: 4px;
 }
 
 
@@ -110,7 +107,7 @@ word-spacing: 2px;
   height: 190px;
   padding: 0 10px;
   background-color: rgb(77,77,77);
-  border: 1px solid rgb(207, 207, 207);
+  border: 1px solid gray;
   border-radius: 3px 18px 18px 3px;
   font-size: 15px;
 }
@@ -121,15 +118,11 @@ word-spacing: 2px;
   height: 30px;
   color: white;
   border-bottom: 2px solid gray;
-  padding: 8px 0 8px 15px;
+  padding-left: 15px;
   margin-left: 15px;
-  transition: 0.5s ease-in-out;
 }
 .mk::placeholder{
   color: white;
-}
-.mk:focus{
-  border-bottom: 2px solid white;
 }
 .submit_btn {
   background-color: rgb(221, 220, 220);
@@ -161,15 +154,15 @@ word-spacing: 2px;
   position: relative;
   left: 20px;
   padding-left: 15px;
+  padding-bottom: 5px;
   border: none;
   width: 240px;
-  font-size: 14px;
-  font-family: 'Montserrat';
+  font-size: 18px;
 }
 .text__string i {
   position: relative;
   color: gray;
-  left: 0;
+  left: 20px;
   margin-right: 10px;
 }
 input:focus{

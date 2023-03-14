@@ -29,18 +29,18 @@ $(document).ready(function () {
   });
 });
 
-function openTab(evt, tabName) {
-    var i, tabContents, tabButton;
+function openTab(event, tabName) {
+    var tabContents, tabButton;
     tabContents = document.querySelectorAll(".FAQ__tabcontent");
-    for (i = 0; i < tabContents.length; i++) {
+    for (var i = 0; i < tabContents.length; i++) {
       tabContents[i].classList.remove("show");
     }
     tabButton = document.querySelectorAll(".FAQ__btn");
-    for (i = 0; i < tabButton.length; i++) {
+    for (var i = 0; i < tabButton.length; i++) {
       tabButton[i].classList.remove("active");
     }
     document.getElementById(tabName).classList.add("show");
-    evt.currentTarget.classList.add("active");
+    event.currentTarget.classList.add("active");
     $(".FAQ__A").hide();
   }
 

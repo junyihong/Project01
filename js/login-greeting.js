@@ -9,9 +9,6 @@ function onLoginSubmit(event) {
     paintGreeting(username);
 }
 
-function paintGreeting(username){
-    greeting.innerText = `Hello, ${username}.`;
-}
 
 loginForm.addEventListener("submit", onLoginSubmit);
 
