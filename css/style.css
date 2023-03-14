@@ -32,7 +32,8 @@
 @import "sign-up.css";
 @import "chat-bot.css";
 @import "cart_in.css";
-
+@import "community.css";
+@import "board.css";
 h1 {
   font-size: 50px;
   font-weight: 700;
@@ -41,7 +42,9 @@ h1 {
 main {
   margin-top: 120px;
 }
-
+html{
+  scroll-behavior:smooth;
+}
 /* 변수지정 */
 :root {
   --point-color: rgb(136, 88, 237);
