@@ -34,6 +34,10 @@
 @import "cart_in.css";
 @import "community.css";
 @import "board.css";
+@import "writing.css";
+
+
+
 h1 {
   font-size: 50px;
   font-weight: 700;
