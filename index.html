@@ -10,7 +10,7 @@
   <script src="js/jquery-3.6.3.min.js"></script>
   <script src="js/chat-bot.js"></script>
   <script>
-    window.onload = function () {
+    $(document).ready(function () {
       const loader = document.querySelector('.loader--text');
       const loadingText = document.querySelector('#loading-h1');
       var i = 0;
@@ -39,7 +39,7 @@
       stopDot = setTimeout(()=>{
         clearInterval(makeDot)
       },6000)
-    }
+    });
   </script>
 
 </head>

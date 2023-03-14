@@ -30,13 +30,13 @@ $(document).ready(function () {
 });
 
 function openTab(event, tabName) {
-    var tabContents, tabButton;
+    var i, tabContents, tabButton;
     tabContents = document.querySelectorAll(".FAQ__tabcontent");
-    for (var i = 0; i < tabContents.length; i++) {
+    for (i = 0; i < tabContents.length; i++) {
       tabContents[i].classList.remove("show");
     }
     tabButton = document.querySelectorAll(".FAQ__btn");
-    for (var i = 0; i < tabButton.length; i++) {
+    for (i = 0; i < tabButton.length; i++) {
       tabButton[i].classList.remove("active");
     }
     document.getElementById(tabName).classList.add("show");
@@ -45,7 +45,3 @@ function openTab(event, tabName) {
   }
 
 
-const initialSetSlide = document.querySelector("#FAQ__tab1");
-const initialSetTab = document.querySelector(".tab button:first-child");
-initialSetSlide.classList.add("show");
-initialSetTab.classList.add("active");

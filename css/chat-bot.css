@@ -162,6 +162,8 @@
 }
 .text__string {
   width: 340px;
+  display: flex;
+  align-items: center;
   height: 60px;
   border: none;
   background-color: white;

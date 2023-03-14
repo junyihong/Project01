@@ -53,7 +53,7 @@
   width: 100%;
   top: 0;
   animation: hideSplashScreen 0.4s ease-in-out forwards;
-  animation-delay: 5s;
+  animation-delay: 4s;
   z-index: 99;
 }
 #splash-img {
