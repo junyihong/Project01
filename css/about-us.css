@@ -41,7 +41,7 @@
       margin-left: 20px;
       font-size: 60px;
 } */
-@keyframes slide-in-top {
+/* @keyframes slide-in-top {
   0% {
       transform: translateY(-1000px);
       transform: translateY(-1000px);
@@ -64,7 +64,7 @@
             transform: translateY(0);
     opacity: 1;
   }
-}
+} */
 
  /* 상단 WaGs 슬라이드 끝 */
 
@@ -145,6 +145,9 @@
 @keyframes rotate {
       to {
             --angle: 360deg;
+      }
+      from {
+            --angle: 0deg;
       }
 }
 @property --angle {
