@@ -2,11 +2,12 @@
 html{
     /*스크롤 부드럽게 이동*/
     scroll-behavior:smooth;
-}
-.products_body {
-    /*전체*/
     background-color: black;
     color: white;
+}
+
+.products_body {
+    /*전체*/
     font-family: "Manrope";
     word-spacing: 5px;
     font-weight: 700;
