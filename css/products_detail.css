@@ -37,7 +37,7 @@
   font-size: 18px;
   display: inline;
 }
-.naming {
+.detail__naming {
   font-size: 32px;
   font-weight: bold;
 }
@@ -50,13 +50,13 @@
   background: #8858ed;
   color: white;
 }
-.box1 {
+.detail__box1 {
   padding-left: 150px;
   color: white;
   float: left;
 }
 
-.price {
+.detail__price {
   font-size: 30px;
   font-weight: bold;
 }
@@ -86,7 +86,7 @@
   color: white;
   margin-top: 8px;
 }
-.option__ {
+.detail__option__ {
   font-size: 25px;
 }
 .poi {

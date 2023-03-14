@@ -13,41 +13,62 @@
     <header>
       <div id="nav">
         <div id="nav__logo">
-          <h1><i class="fa-brands fa-accusoft"></i> WAGs</h1>
+          <a href="index.html"
+            ><img src="img/main-logo.png" width="360px" height="90px" alt=""
+          /></a>
         </div>
         <div id="nav__right">
           <ul class="nav__list">
             <li>
-              <a href="#">About Us</a>
+              <a href="about-us.html">About Us</a>
             </li>
             <li>
               <a href="products.html">Products</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="community.html">Community</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
             </li>
           </ul>
           <ul id="nav__icon">
-            <input id="search-input" class="hidden" type="text" />
+            <input id="search-input" class="v-hidden" type="text" />
             <li id="toggle-vibility">
               <i class="fa-solid fa-magnifying-glass"></i>
             </li>
-            <li>
-              <a href="login.html"><i class="fa-solid fa-user-tie"></i></a>
-            </li>
-
             <li id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></li>
+            <li>
+              <a href="login.html"
+                ><i class="fa-solid fa-user-tie"></i
+                ><span id="greeting">Log-In</span></a
+              >
+            </li>
           </ul>
         </div>
+        <div class="nav_padding"></div>
       </div>
+      <div id="lightoff" class="lightoff-hidden" onclick="lightOn()"></div>
       <div id="cart">
         <div id="cart__top">
           <i class="fa-solid fa-angles-right"></i>
           <span>Cart</span>
-          <span class="padding">I</span>
+          <span class="padding">i</span>
+        </div>
+        <div id="cart__container">
+          <span id="cart__empty">Cart is empty</span>
+          <ul id="cart__list"></ul>
         </div>
         <div id="cart__bottom">
-          <span>Cart is empty</span>
+          <div id="cart__calculator">
+            <span id="cart__sum1">Total :</span>
+            <span id="cart__sum2">0.00</span>
+          </div>
+          <div id="cart__bottom__btndiv">
+            <a href="cart.html"
+              ><button id="cart__viewCart">View Cart</button></a
+            >
+          </div>
         </div>
       </div>
     </header>
@@ -69,13 +90,11 @@
               <div class="cart_in_productname">
                 <div><a href="products_detail.html">Game flow</a></div>
 
-                <div>
-                  <del style="color: gray">₩ 1,222,000</del> → ₩ 999,000
-                </div>
+                <div><del style="color: gray">$999.00</del> → $900.00</div>
               </div>
               <div>
                 <div class="ccaa"><button type="button">x</button></div>
-                <div class="ccaa">&nbsp; ₩ 999,000 &nbsp;</div>
+                <div class="ccaa">&nbsp; $900.00 &nbsp;</div>
                 <div class="ccaa1">
                   <button>-</button
                   ><input
@@ -90,8 +109,9 @@
           <div class="price__box">
             <div class="to_bu">
               <div class="to_bn_sub1">sub total</div>
-              <div class="to_bn_sub2">₩ 999,000</div>
+              <div class="to_bn_sub2">$900.00</div>
               <br />
+
               <br />
               <div><a class="mollu" href="">Estimating Shipping</a></div>
             </div>
@@ -99,7 +119,7 @@
             <div class="total__price__check">
               <br />
               <div class="total__price__check1">total price</div>
-              <div class="total__price__check2">₩ 999,000</div>
+              <div class="total__price__check2">$900.00</div>
             </div>
           </div>
         </div>
@@ -166,11 +186,11 @@
       <div id="foot__bottom">
         <div class="foot__underbox">
           <span id="pay">Payment Methods</span><br />
-          <img src="/img/pay.PNG" />
+          <img src="../Project01\img\pay.PNG" />
         </div>
         <div class="foot__underbox">
           <span id="pay">Join the Community</span><br />
-          <img src="/img/join.png" />
+          <img src="../Project01\img\join.PNG" />
         </div>
       </div>
       <div class="chat">
@@ -179,7 +199,7 @@
         </button>
         <div class="text__icon__pidAlone">
           <div class="chat__top">
-            <img src="" id="chat__top__img" />
+            <img src="../Project01\img\chat-logo.png" id="chat__top__img" />
             <p id="chat__top__p">
               <span id="chat__top__name">WAGs</span><br />
               <span id="chat__top__reply">We’ll reply as soon as we can.</span>
