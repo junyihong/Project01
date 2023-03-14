@@ -2,7 +2,6 @@
   background-color: black;
   color: white;
 }
-
 #contact__container {
   padding: 20px 7%;
   display: flex;
@@ -22,7 +21,7 @@
 }
 
 #contact__left {
-  display: block;
+  display: flex;
   min-width: 35%;
   flex-direction: column;
   justify-content: space-between;

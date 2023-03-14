@@ -29,7 +29,7 @@ $(document).ready(function () {
   });
 });
 
-function openTab(evt, tabName) {
+function openTab(event, tabName) {
     var i, tabContents, tabButton;
     tabContents = document.querySelectorAll(".FAQ__tabcontent");
     for (i = 0; i < tabContents.length; i++) {
@@ -40,12 +40,8 @@ function openTab(evt, tabName) {
       tabButton[i].classList.remove("active");
     }
     document.getElementById(tabName).classList.add("show");
-    evt.currentTarget.classList.add("active");
+    event.currentTarget.classList.add("active");
     $(".FAQ__A").hide();
   }
 
 
-const initialSetSlide = document.querySelector("#FAQ__tab1");
-const initialSetTab = document.querySelector(".tab button:first-child");
-initialSetSlide.classList.add("show");
-initialSetTab.classList.add("active");

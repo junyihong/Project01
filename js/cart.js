@@ -112,8 +112,4 @@ if (savedCarts !== null) {
   const parsedCarts = JSON.parse(savedCarts);
   carts = parsedCarts;
   parsedCarts.forEach(paintCart);
-  const cartSpan = document.querySelector("#cart__empty");
-  cartSpan.style.display = 'none';
-} else {
-  cartSpan.style.display = 'inline-block';
-}
+} 

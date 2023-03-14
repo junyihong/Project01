@@ -6,9 +6,7 @@ var slides = document.querySelector(".slides"),
     slideMargin = 30,
     prevBtn = document.querySelector(".prev"),
     nextBtn = document.querySelector(".next");
-
 makeClone();
-
 function makeClone() {
         // 기존에 존재하던 리스트 뒤에 클론리스트 추가하는 for문
     for(var i=0; i<slideCount; i++){
@@ -34,7 +32,7 @@ function makeClone() {
         slides.classList.add("animated");
     }, 100);
 }
-function updateWidth(){
+function updateWidth() {
         // 앞뒤로 추가된 클론리스트를 포함하여 다시 새로이 선택
     var currentSlides = document.querySelectorAll(".slides li");
         // 새로 선택한 리스트들의 길이
@@ -47,7 +45,6 @@ function updateWidth(){
 }
 function setInitialPos(){
     var inintialTranslateValue = (slideWidth + slideMargin)*slideCount;
-    //slides {transform: translateX(-2940px);}
     slides.style.transform = 'translateX(-' + inintialTranslateValue +'px)';
 }
 nextBtn.addEventListener("click", function(){
@@ -74,7 +71,6 @@ function moveSlide(num){
         },600);
         // 다시 애니메이션 효과 추가
     }
-
 }
 
 

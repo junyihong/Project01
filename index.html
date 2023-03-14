@@ -10,7 +10,7 @@
   <script src="js/jquery-3.6.3.min.js"></script>
   <script src="js/chat-bot.js"></script>
   <script>
-    window.onload = function () {
+    $(document).ready(function () {
       const loader = document.querySelector('.loader--text');
       const loadingText = document.querySelector('#loading-h1');
       var i = 0;
@@ -20,7 +20,7 @@
 
       loading = setInterval(() => {
         if (loadingProgress < 80) {
-          loadingProgress += Math.floor(Math.random() * 15 + 6);
+          loadingProgress += Math.floor(Math.random() * 15 + 7);
           loader.innerText = `-  ${loadingProgress}%  -`
         } else {
           loadingProgress = 100;
@@ -39,7 +39,7 @@
       stopDot = setTimeout(()=>{
         clearInterval(makeDot)
       },6000)
-    }
+    });
   </script>
 
 </head>
@@ -86,7 +86,7 @@
         <span class="padding">i</span>
       </div>
       <div id="cart__container">
-        <span id="cart__empty">Cart is empty</span>
+        <span id="cart__empty"></span>
         <ul id="cart__list"></ul>
       </div>
       <div id="cart__bottom">
